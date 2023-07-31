@@ -3,6 +3,8 @@ import Carousel from './Carousel'
 import DealOfTheDay from './DealOfTheDay'
 import GiftCards from './GiftCards'
 import NewInTopBrands from './NewInTopBrands'
+import TrendsForHer from './TrendsForHer'
+import TrendsForHim from './TrendsForHim'
 const Home = () => {
   return (
     <div className='pt-5'>
@@ -10,6 +12,8 @@ const Home = () => {
       <DealOfTheDay/>
       <GiftCards/>
       <NewInTopBrands/>
+      <TrendsForHer/>
+      <TrendsForHim/>
     </div>
   )
 }

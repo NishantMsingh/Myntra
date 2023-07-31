@@ -28,7 +28,8 @@
     
 }
 .bold{
-    font-weight: 500p;
+    font-weight: 500;
+    color: rgb(243, 9, 68);;
 }
 
 /* Home Css  */
