@@ -5,7 +5,6 @@ import top3 from "../Assets/Images/topbrand3.png";
 import top4 from "../Assets/Images/topbrand4.png";
 import top5 from "../Assets/Images/topbrand5.png";
 import top6 from "../Assets/Images/topbrand6.png";
-import top7 from "../Assets/Images/topbrand7.png";
 import top8 from "../Assets/Images/topbrand8.png";
 const NewInTopBrands = () => {
   return (
