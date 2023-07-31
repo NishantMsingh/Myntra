@@ -14,7 +14,7 @@ const Header = () => {
   const [searchValue, setSearchValue] = useState('');
 
   const menuHandler = () => {
-    if (window.innerWidth <= 992) {
+    if (window.innerWidth <= 768) {
       setMenu(!menu);
     }
   };
@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <header className="header-absolute bg-d">
-      <div className="max-20"><img src={logo} alt='LOGO' className='img-fluid w-10' /></div>
+      <div className=""><img src={logo} alt='LOGO' className='img-fluid w-10 me-3' /></div>
       <div className='d-flex align-items-center justify-content-between flex-row'>
 
        
@@ -36,39 +36,47 @@ const Header = () => {
           <span><a href='#Skills' onClick={menuHandler}>KID</a></span>
           <span><a href='#Projects' onClick={menuHandler}>HOME & LIVING</a></span>
           <span><a href='#About' download onClick={menuHandler}>BEAUTY</a></span>
-          <span><a href='#Contact' onClick={menuHandler}>STUDIO <sup className='text-dark'>TM</sup></a></span>
+          <span><a href='#Contact' onClick={menuHandler}>STUDIO <sup className='tm'>TM</sup></a></span>
+          <form onSubmit={e => e.preventDefault()} className='header-search'>
+         <span> <RiSearchLine/></span>
+          <input
+            type='text'
+            placeholder='Search for product, brand and more...'
+            value={searchValue}
+            
+            onChange={handleSearchChange}
+          />
+        </form>
         </nav>
+       
        
        
       </div>
 
       <div className='d-flex align-items-center justify-content-between flex-row'>
 
-      <form onSubmit={e => e.preventDefault()} className='header-search'>
-         <span> <RiSearchLine/></span>
-          <input
-            type='text'
-            placeholder='Search for product,brand and more...'
-            value={searchValue}
-            
-            onChange={handleSearchChange}
-          />
-        </form>
+        
         <div className='user-cart-wish'>
              <span><CgProfile fontSize={"1.3rem"}/></span>
-             <span>Profile</span>
+             <span className='mobile'>Profile</span>
         </div>
-        <div className='user-cart-wish'>
+        <div className='user-cart-wish pos-top-5'>
+        <span><sup className='cart-number'>200</sup></span>
              <span><AiOutlineHeart fontSize={"1.3rem"}/></span>
-             <span>Wish List</span>
+             <span className='mobile'>Wish List</span>
         </div>
 
-        <div className='user-cart-wish'>
-             <span><BsFillBagFill fontSize={"1.3rem"}/></span>
-             <span>Bag</span>
+        <div className='user-cart-wish pos-top-5'>
+             <span><sup className='cart-number'>200</sup></span>
+             <span onClick={menuHandler} className='d-flex flex-row'><BsFillBagFill fontSize={"1.3rem"}/> </span>
+             <span className='mobile'>Bag</span>
+        </div> 
+        <div className='user-cart-wish burger'>
+             <span onClick={menuHandler}><CgMenuRight fontSize={"2rem"}/></span>
+         
         </div>
 
-        <CgMenuRight fontSize="2rem" color="dark" onClick={menuHandler} />
+    
       </div>
     </header>
   );

@@ -1,5 +1,5 @@
 .header-absolute{
-    
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,8 +9,23 @@
     z-index: 10000;
     box-shadow: 0px 6px 23px 2px #e9e9e99f;
 }
+.cart-number{
+    position: relative;
+    top: 5px;
+    left: 10px;
+    background-color: rgb(243, 9, 68);
+    padding: 3px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+
+}
+.pos-top-5{
+    position: relative;
+    top: -5px;
+}
+
 .w-10{
-    width: 40%;
+    width: 30%;
 }.max-20{
     max-width: 10%;
 }
@@ -41,16 +56,19 @@
     margin-left: 1rem;
     margin-right: 1rem;
     border: none;
-    background-color: #706e6e00;
+    background: #00000000;
+  
     outline: none;
     position: relative;
-    width: 300px;
+
 }
 .pos{
     position: relative;
     top: -5px;
 }
-
+.burger{
+    display: none;
+}
 nav span a{
     text-decoration: none;
     color: rgb(37, 37, 37);
@@ -58,12 +76,19 @@ nav span a{
     font-weight: 600;
     margin-left: 14px;
   }
-@media (max-width:992px) {
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+@media (max-width:1000px) {
     nav{
         z-index: 1000;
         position: absolute;
         left: 0;
-        top: 61px;
+        top: 85px;
          display: flex;
          align-items: center;
          justify-content: center;
@@ -74,12 +99,15 @@ nav span a{
         padding: 0px !important;
         height: 0px;
         overflow-y: hidden;
-        transition: all .5s cubic-bezier(0.26,-0.37, 0.19, 0.91);
-    
-        
+        transition: all .5s cubic-bezier(0.26,-0.37, 0.19, 0.91);  
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
     }
     .w-10{
-        width: 80%;
+        width: 50%;
     }
     .header-search input{
         margin-left: 1rem;
@@ -88,18 +116,23 @@ nav span a{
         background-color: #706e6e00;
         outline: none;
         position: relative;
-        width: 150px;
+        width: 250px;
     }
     .heigh{
-        height: 200px;
+        height: 250px;
           transition: all .5s ease-in-out;
     }
     nav span{
         margin-top: 5px;
     }
-   .header-burger{
-    cursor: pointer;
+   .mobile{
+    display: none;
    }
+.header-absolute{
+    
+    z-index: 10000;
+}
 
     
 }
+
