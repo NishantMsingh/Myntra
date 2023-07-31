@@ -18,7 +18,6 @@ const DealOfTheDay = () => {
         <img src={dealoftheday4} alt='' className='img-fluid'/>
         <img src={dealoftheday5} alt='' className='img-fluid'/>
         <img src={dealoftheday6} alt='' className='img-fluid'/>
-        {/* <img src={dealoftheday7} alt='' className='img-fluid'/> */}
         <img src={dealoftheday8} alt='' className='img-fluid'/>
         <img src={dealoftheday1} alt='' className='img-fluid'/>
         <img src={dealoftheday2} alt='' className='img-fluid'/>
