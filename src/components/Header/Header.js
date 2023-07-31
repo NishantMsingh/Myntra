@@ -58,18 +58,18 @@ const Header = () => {
         
         <div className='user-cart-wish'>
              <span><CgProfile fontSize={"1.3rem"}/></span>
-             <span className='mobile'>Profile</span>
+             <span>Profile</span>
         </div>
-        <div className='user-cart-wish pos-top-5'>
+        {/* <div className='user-cart-wish pos-top-5'>
         <span><sup className='cart-number'>200</sup></span>
              <span><AiOutlineHeart fontSize={"1.3rem"}/></span>
              <span className='mobile'>Wish List</span>
-        </div>
+        </div> */}
 
         <div className='user-cart-wish pos-top-5'>
              <span><sup className='cart-number'>200</sup></span>
              <span onClick={menuHandler} className='d-flex flex-row'><BsFillBagFill fontSize={"1.3rem"}/> </span>
-             <span className='mobile'>Bag</span>
+             <span>Bag</span>
         </div> 
         <div className='user-cart-wish burger'>
              <span onClick={menuHandler}><CgMenuRight fontSize={"2rem"}/></span>

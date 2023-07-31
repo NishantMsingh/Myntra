@@ -28,8 +28,13 @@
     
 }
 .bold{
-    font-weight: 500;
-    color: rgb(243, 9, 68);;
+    font-weight: 600;
+
+}
+.slate{
+  color: rgba(78, 77, 77, 0.521);
 }
 
 /* Home Css  */
+
+/* Card  */

@@ -6,6 +6,7 @@ import Home from "./Screens/Home";
 import Men from "./Screens/Men";
 import Women from "./Screens/Women";
 import Child from "./Screens/Child";
+import Product from "./Screens/Product";
 function App() {
   return (
     <Fragment>
@@ -13,10 +14,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/Home" element={<Home />} />
-          <Route path="/Men" element={<Men />} />
+          <Route path="/" element={<Product />} />
           <Route path="/Women" element={<Women />} />
           <Route path="/Children" element={<Child />} />
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<Product />} />
         </Routes>
       </BrowserRouter>
       <Footer />

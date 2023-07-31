@@ -1,0 +1,62 @@
+.product-images img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+  
+  .offer {
+    font-size: 14px;
+  }
+  
+  .select-size,
+  .size-chart {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .addToCart{
+    border-radius: 3px;
+    background-color: rgb(236, 28, 63);
+    color:aliceblue;
+    font-weight: 500;
+    border: none;
+    padding: 5px 15px;
+  }
+  .size-options label {
+    margin-right: 10px;
+  }
+  
+
+  
+  .delivery-options p {
+    margin-bottom: 5px;
+  }
+  
+  .customer-reviews p:last-child {
+    margin-top: 10px;
+  }
+.ratting-container{
+    border-radius: 3px;
+    border: 1px solid rgba(104, 100, 100, 0.452);
+   display: inline;
+    padding: 5px 10px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.offer{
+    color: coral;
+}
+  .mobile{
+    display: none;
+}
+  @media (max-width:768px) {
+    .card-controler{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .mobile{
+        display: block;
+    }
+  }
