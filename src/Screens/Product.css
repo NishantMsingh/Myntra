@@ -8,6 +8,23 @@
     font-size: 14px;
   }
   
+    .h2 .bold .mb-2 .product-title {
+      /* Font & Text */
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 32px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 600;
+      letter-spacing: normal;
+      line-height: 38.4px;
+      text-decoration: none solid rgb(33, 37, 41);
+      text-align: start;
+      text-indent: 0px;
+      text-transform: none;
+      white-space: normal;
+      word-spacing: 0px;
+    }
+  
   .select-size,
   .size-chart {
     font-weight: bold;
@@ -19,14 +36,28 @@
     color:aliceblue;
     font-weight: 500;
     border: none;
-    padding: 5px 15px;
+    padding: 10px 25px;
   }
   .size-options label {
     margin-right: 10px;
   }
-  
-
-  
+  .pointer{
+    cursor: pointer;
+  }
+  .border-1{
+    border: 1px solid rgba(0, 0, 0, 0.281);
+  }
+.pincode{
+  background-color: transparent;
+  outline: none;
+  padding: 4px;
+  border: none;
+}
+  .delivery-time{
+   color:rgb(236, 28, 63);
+   font-weight: 500;
+   margin: 1rem 0px;
+  }
   .delivery-options p {
     margin-bottom: 5px;
   }

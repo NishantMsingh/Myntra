@@ -45,34 +45,7 @@ const Footer = () => {
             </ul>
           </Col>
         </Row>
-        <Row>
-          <Col xs={12} className="mt-3 text-center">
-            <p>
-              EXPERIENCE MYNTRA APP ON MOBILE
-            </p>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} className="mt-3 text-center">
-            <p>
-              KEEP IN TOUCH
-            </p>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} className="mt-3 text-center">
-            <p>
-              100% ORIGINAL guarantee for all products at myntra.com
-            </p>
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} className="mt-3 text-center">
-            <p>
-              Return within 14 days of receiving your order
-            </p>
-          </Col>
-        </Row>
+       
       </Container>
     </footer>
   );
