@@ -38,6 +38,10 @@
     border: none;
     padding: 10px 25px;
   }
+  .addToCart:hover{
+    background-color: rgb(204, 12, 44);
+    color:aliceblue;
+  }
   .size-options label {
     margin-right: 10px;
   }
@@ -54,9 +58,11 @@
   border: none;
 }
   .delivery-time{
-   color:rgb(236, 28, 63);
-   font-weight: 500;
+   color:rgb(63, 63, 63);
    margin: 1rem 0px;
+   display: flex;
+   flex-direction: row;
+
   }
   .delivery-options p {
     margin-bottom: 5px;
