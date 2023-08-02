@@ -23,10 +23,10 @@
 .tm{
     color: rgb(243, 9, 68);
 }
-.active{
+/* .active{
     border-bottom: 5px solid rgba(243, 9, 67, 0.719);
     
-}
+} */
 .bold{
     font-weight: 700 !important;
 

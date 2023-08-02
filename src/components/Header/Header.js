@@ -4,17 +4,18 @@ import './Header.css';
 import { RiSearchLine } from 'react-icons/ri';
 import { CgProfile } from 'react-icons/cg';
 import { CgMenuRight } from 'react-icons/cg';
-import { AiOutlineHeart } from 'react-icons/ai';
+
 
 import { BsFillBagFill } from 'react-icons/bs';
 import logo from "../../Assets/Images/Logo.png";
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
   const [searchValue, setSearchValue] = useState('');
 
   const menuHandler = () => {
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 1000) {
       setMenu(!menu);
     }
   };
@@ -31,12 +32,12 @@ const Header = () => {
        
 
         <nav className={menu ? 'heigh' : 'dark'}>
-          <span> <a href='#hero' onClick={menuHandler}>MEN</a></span>
-          <span><a href='#About' onClick={menuHandler}>WOMEN</a></span>
-          <span><a href='#Skills' onClick={menuHandler}>KID</a></span>
-          <span><a href='#Projects' onClick={menuHandler}>HOME & LIVING</a></span>
-          <span><a href='#About' download onClick={menuHandler}>BEAUTY</a></span>
-          <span><a href='#Contact' onClick={menuHandler}>STUDIO <sup className='tm'>TM</sup></a></span>
+          <span> <NavLink to="/Men" onClick={menuHandler}>MEN</NavLink></span>
+          <span><NavLink  to="/Women" onClick={menuHandler}>WOMEN</NavLink></span>
+          <span><NavLink  to="/Kid" onClick={menuHandler}>KID</NavLink></span>
+          <span><NavLink  to="/Home" onClick={menuHandler}>HOME & LIVING</NavLink></span>
+          <span><NavLink  to="/Beauty" onClick={menuHandler}>BEAUTY</NavLink></span>
+          <span><NavLink  to="/Studio" onClick={menuHandler}>STUDIO <sup className='tm'>TM</sup></NavLink></span>
           <form onSubmit={e => e.preventDefault()} className='header-search'>
          <span> <RiSearchLine/></span>
           <input
@@ -60,12 +61,7 @@ const Header = () => {
              <span><CgProfile fontSize={"1.3rem"}/></span>
              <span>Profile</span>
         </div>
-        {/* <div className='user-cart-wish pos-top-5'>
-        <span><sup className='cart-number'>200</sup></span>
-             <span><AiOutlineHeart fontSize={"1.3rem"}/></span>
-             <span className='mobile'>Wish List</span>
-        </div> */}
-
+      
         <div className='user-cart-wish pos-top-5'>
              <span><sup className='cart-number'>200</sup></span>
              <span onClick={menuHandler} className='d-flex flex-row'><BsFillBagFill fontSize={"1.3rem"}/> </span>

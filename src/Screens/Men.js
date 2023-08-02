@@ -1,19 +1,17 @@
-import React from 'react'
-import product from "../Assets/Images/product.png"
+import React from 'react';
+import ProductCard from "./ProductCard";
+import { products } from "../Assets/Address JSon/ProductsJSONMens";
+
+
+
 const Men = () => {
   return (
-    <div>
-<div class='card-container'>
-  <img src={product} alt='product1' class='img-fluid' />
-  <div class='card-info'>
-    
-    <span class='price'>$19.99</span>
-    <button class='wishlist-btn'>Add to Wishlist</button>
-  </div>
-</div>
-
+    <div className='container d-flex align-items-center justify-content-evenly flex-wrap mt-5 mb-5'>
+      {products.map((value) => (
+        <ProductCard key={value.productCode} product={value} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Men
+export default Men;
