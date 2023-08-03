@@ -88,20 +88,24 @@ nav span a{
         z-index: 1000;
         position: absolute;
         left: 0;
-        top: 85px;
+        top: 77px;
          display: flex;
          align-items: center;
          justify-content: center;
          flex-direction: column;
-        background-color: #fafafab9;
+         background-color: white;
+        color: white;
         width: 100%;
         margin: 0px !important;
         padding: 0px !important;
         height: 0px;
         overflow-y: hidden;
         transition: all .5s cubic-bezier(0.26,-0.37, 0.19, 0.91);  
+       
     }
-
+  nav span{
+    color: white;
+  }
     .burger{
         display: block;
         cursor: pointer;
@@ -117,9 +121,11 @@ nav span a{
         outline: none;
         position: relative;
         width: 250px;
+        
     }
     .heigh{
         height: 250px;
+      
           transition: all .5s ease-in-out;
     }
     nav span{

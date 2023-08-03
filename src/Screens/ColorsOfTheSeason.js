@@ -13,15 +13,15 @@ const ColorsOfTheSeason = () => {
   
  <div className='mt-3 mb-3 container'>
  <h3 className='bold mb-3'>GIFTING CARDS</h3>
-      <div class="row justify-content-center align-items-center g-2">
-        <div class="col-lg-3 col-md-4 col-sm-12"><img src={color1} alt='Gift' className='img-fluid rounded'/></div>
-        <div class="col-lg-3 col-md-4 col-sm-12"><img src={color2} alt='Gift' className='img-fluid rounded'/></div>
-        <div class="col-lg-3 col-md-4 col-sm-12"><img src={color3} alt='Gift' className='img-fluid rounded'/></div>
-        <div class="col-lg-3 col-md-4 col-sm-12"><img src={color4} alt='Gift' className='img-fluid rounded'/></div>
-        <div class="col-lg-3 col-md-4 col-sm-12"><img src={color5} alt='Gift' className='img-fluid rounded'/></div>
-        <div class="col-lg-3 col-md-4 col-sm-12"><img src={color6} alt='Gift' className='img-fluid rounded'/></div>
-        <div class="col-lg-3 col-md-4 col-sm-12"><img src={color7} alt='Gift' className='img-fluid rounded'/></div>
-        <div class="col-lg-3 col-md-4 col-sm-12"><img src={color8} alt='Gift' className='img-fluid rounded'/></div>
+      <div className="row justify-content-center align-items-center g-2">
+        <div className="col-lg-3 col-md-4 col-sm-12"><img src={color1} alt='Gift' className='img-fluid rounded'/></div>
+        <div className="col-lg-3 col-md-4 col-sm-12"><img src={color2} alt='Gift' className='img-fluid rounded'/></div>
+        <div className="col-lg-3 col-md-4 col-sm-12"><img src={color3} alt='Gift' className='img-fluid rounded'/></div>
+        <div className="col-lg-3 col-md-4 col-sm-12"><img src={color4} alt='Gift' className='img-fluid rounded'/></div>
+        <div className="col-lg-3 col-md-4 col-sm-12"><img src={color5} alt='Gift' className='img-fluid rounded'/></div>
+        <div className="col-lg-3 col-md-4 col-sm-12"><img src={color6} alt='Gift' className='img-fluid rounded'/></div>
+        <div className="col-lg-3 col-md-4 col-sm-12"><img src={color7} alt='Gift' className='img-fluid rounded'/></div>
+        <div className="col-lg-3 col-md-4 col-sm-12"><img src={color8} alt='Gift' className='img-fluid rounded'/></div>
       </div>
      
  

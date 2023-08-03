@@ -57,6 +57,8 @@
   padding: 4px;
   border: none;
 }
+
+
   .delivery-time{
    color:rgb(63, 63, 63);
    margin: 1rem 0px;
@@ -67,7 +69,9 @@
   .delivery-options p {
     margin-bottom: 5px;
   }
-  
+  .wishlist-btn{
+    display: none;
+  }
   .customer-reviews p:last-child {
     margin-top: 10px;
   }
@@ -96,4 +100,20 @@
     .mobile{
         display: block;
     }
+    .wishlist-btn{
+      display: block;
+    }
+    .addtoCartMobile{
+      position: fixed;
+      bottom: 0px;
+      width: 100vw;
+      padding: 10px;
+      left:0;
+      background: #66656581;
+      margin: 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      }
   }
