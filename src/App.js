@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { BrowserRouter, Route, Routes, useParams } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./Screens/Home";
