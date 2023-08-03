@@ -9,7 +9,10 @@ import Child from "./Screens/Child";
 import Product from "./Screens/Product";
 import React from 'react';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 196c434fd0ef497977ed85c89032fe7cfc4a07f1
 function App() {
  
   return (

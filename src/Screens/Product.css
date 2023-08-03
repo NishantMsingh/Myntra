@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .product-images img {
     width: 100px;
     height: 100px;
@@ -116,4 +117,124 @@
       align-items: center;
       justify-content: space-between;
       }
+=======
+.product-images img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+  
+  .offer {
+    font-size: 14px;
+  }
+  
+    .h2 .bold .mb-2 .product-title {
+      /* Font & Text */
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 32px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 600;
+      letter-spacing: normal;
+      line-height: 38.4px;
+      text-decoration: none solid rgb(33, 37, 41);
+      text-align: start;
+      text-indent: 0px;
+      text-transform: none;
+      white-space: normal;
+      word-spacing: 0px;
+    }
+  
+  .select-size,
+  .size-chart {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .addToCart{
+    border-radius: 3px;
+    background-color: rgb(236, 28, 63);
+    color:aliceblue;
+    font-weight: 500;
+    border: none;
+    padding: 10px 25px;
+  }
+  .addToCart:hover{
+    background-color: rgb(204, 12, 44);
+    color:aliceblue;
+  }
+  .size-options label {
+    margin-right: 10px;
+  }
+  .pointer{
+    cursor: pointer;
+  }
+  .border-1{
+    border: 1px solid rgba(0, 0, 0, 0.281);
+  }
+.pincode{
+  background-color: transparent;
+  outline: none;
+  padding: 4px;
+  border: none;
+}
+
+
+  .delivery-time{
+   color:rgb(63, 63, 63);
+   margin: 1rem 0px;
+   display: flex;
+   flex-direction: row;
+
+  }
+  .delivery-options p {
+    margin-bottom: 5px;
+  }
+  .wishlist-btn{
+    display: none;
+  }
+  .customer-reviews p:last-child {
+    margin-top: 10px;
+  }
+.ratting-container{
+    border-radius: 3px;
+    border: 1px solid rgba(104, 100, 100, 0.452);
+   display: inline;
+    padding: 5px 10px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.offer{
+    color: coral;
+}
+  .mobile{
+    display: none;
+}
+  @media (max-width:768px) {
+    .card-controler{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .mobile{
+        display: block;
+    }
+    .wishlist-btn{
+      display: block;
+    }
+    .addtoCartMobile{
+      position: fixed;
+      bottom: 0px;
+      width: 100vw;
+      padding: 10px;
+      left:0;
+      background: #66656581;
+      margin: 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      }
+>>>>>>> 196c434fd0ef497977ed85c89032fe7cfc4a07f1
   }
