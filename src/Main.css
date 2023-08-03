@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 :root {
     --scrollbar-thumb-color: #8888880088800; /* Color for the scrollbar thumb (dragging handle) */
     --scrollbar-track-color: #f1f1f100; /* Color for the scrollbar track (background) */
@@ -39,45 +39,3 @@
 /* Home Css  */
 
 /* Card  */
-=======
-:root {
-    --scrollbar-thumb-color: #8888880088800; /* Color for the scrollbar thumb (dragging handle) */
-    --scrollbar-track-color: #f1f1f100; /* Color for the scrollbar track (background) */
-  }
-
-
-
-/* styles.css */
-/* Apply the custom scrollbar styles to the div with the class 'custom-scrollbar' */
-.custom-scrollbar::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
-  }
-  
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-thumb-color); /* Color for the scrollbar thumb */
-    border-radius: 5px; /* Rounded corners for the scrollbar thumb */
-  }
-  
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background-color: var(--scrollbar-track-color); /* Color for the scrollbar track */
-  }
-  
-.tm{
-    color: rgb(243, 9, 68);
-}
-/* .active{
-    border-bottom: 5px solid rgba(243, 9, 67, 0.719);
-    
-} */
-.bold{
-    font-weight: 700 !important;
-
-}
-.slate{
-  color: rgba(78, 77, 77, 0.521);
-}
-
-/* Home Css  */
-
-/* Card  */
->>>>>>> 196c434fd0ef497977ed85c89032fe7cfc4a07f1
