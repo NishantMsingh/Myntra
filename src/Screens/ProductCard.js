@@ -25,7 +25,7 @@ const dispatch=useDispatch();
           </Link>
                 
                 
-       <div><span className="product-price">{props.product.curPrice} </span>
+       <div><span className="product-price">₹{props.product.curPrice} </span>
       <span className="product-mrp">₹{props.product.prevPrice} </span>
       <span className="product-discount">[{props.product.offer} ]</span></div>
       </div>
