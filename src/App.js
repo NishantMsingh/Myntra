@@ -8,6 +8,7 @@ import Women from "./Screens/Women";
 import Child from "./Screens/Child";
 import Product from "./Screens/Product";
 import React from 'react';
+import Auth from "./components/Auth/Auth";
 function App() {
  
   return (
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/Home" element={<Home />} />
+          <Route path="/Auth" element={<Auth />} />
           <Route path="/product/:productCode" element={<Product location={location}/>} />
           <Route path="/Women" element={<Women />} />
           <Route path="/Men" element={<Men />} />

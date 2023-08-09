@@ -9,9 +9,10 @@ import { CgMenuRight } from 'react-icons/cg';
 
 import { BsFillBagFill } from 'react-icons/bs';
 import logo from "../../Assets/Images/Logo.png";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
+  const islogged=false;
   const [menu, setMenu] = useState(false);
   const [searchValue, setSearchValue] = useState('');
 
@@ -58,9 +59,29 @@ const Header = () => {
       <div className='d-flex align-items-center justify-content-between flex-row'>
 
         
-        <div className='user-cart-wish'>
+        <div className='user-cart'>
              <span><CgProfile fontSize={"1.3rem"}/></span>
-             <span>Profile</span>
+             <span className='user-cart'>Profile</span>
+             <div className='profile'> 
+                <h6>Welcome</h6>
+                <div className='mb-3'>To access account and manage orders</div>
+                {!islogged && <Link to="/Auth"><span className='login-signup mb-3'>Login/Signup</span></Link> }
+              
+                {islogged && <span className='logout mb-3'>Logout</span>}
+                <hr/>
+                <span    className=" mb-1">Orders</span><br/>
+                <span    className=" mb-1">Wishlist</span><br/>
+                <span    className=" mb-1">Gift Cards</span><br/>
+                <span    className=" mb-1">Contact Us</span><br/>
+                <span    className=" mb-1">Myntra Insider</span><br/>
+                <hr/>
+                <span    className=" mb-1">Myntra Credit</span><br/>
+                <span    className=" mb-1">Coupons</span><br/>
+                <span    className=" mb-1">Saved Cards</span><br/>
+                <span    className=" mb-1">Saved  VPA</span><br/>
+                <span    className=" mb-1">Saved Address</span><br/>
+                <hr/>
+             </div>
         </div>
       
         <div className='user-cart-wish pos-top-5'>

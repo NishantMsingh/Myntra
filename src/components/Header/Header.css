@@ -20,6 +20,37 @@
     color: rgb(255, 255, 255);
 
 }
+
+.profile{
+    position: absolute;
+    min-width: 300px;
+    right: -20px;
+    top: 70px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 5px 10px 5px #8f89897a;
+    opacity: 0;
+    border-radius: 4px;
+    transition: all .5s ease-in-out;
+}
+.user-cart:hover .profile{
+    top: 55px;
+    opacity: 1;
+
+}
+.login-signup,.logout{
+    border: 1px solid black;
+    font-weight: 500;
+    color:rgb(243, 9, 68); 
+    padding: 8px 20px;
+  
+}
+
+.login-signup:hover,.logout:hover{
+    border: 1px solid  rgb(243, 9, 68); 
+   
+  
+}
 .pos-top-5{
     position: relative;
     top: -7px;
@@ -31,12 +62,23 @@
     max-width: 10%;
 }
 .user-cart-wish{
+   
   display: flex;
   align-items: center;
   justify-content:center;
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
+}
+.user-cart{
+    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 .user-cart-wish span{
     font-size: 12px;

@@ -12,3 +12,13 @@ body {
 .dark{
   color: rgb(37, 37, 37);
 }
+.authbg{
+  background-color: #FCEDEC;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
