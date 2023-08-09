@@ -20,8 +20,7 @@
     color: rgb(255, 255, 255);
 
 }
-
-.profile{
+.profile {
     position: absolute;
     min-width: 300px;
     right: -20px;
@@ -31,13 +30,19 @@
     box-shadow: 0px 5px 10px 5px #8f89897a;
     opacity: 0;
     border-radius: 4px;
-    transition: all .5s ease-in-out;
-}
-.user-cart:hover .profile{
+    z-index: -1000;
+    transition: all 0.5s ease-in-out;
+    display: none;
+    pointer-events: none; /* Disable pointer events to prevent hover issues */
+  }
+  
+  .user-cart:hover .profile {
     top: 55px;
     opacity: 1;
-
-}
+    display: block;
+    pointer-events: auto; /* Enable pointer events on hover */
+  }
+  
 .login-signup,.logout{
     border: 1px solid black;
     font-weight: 500;

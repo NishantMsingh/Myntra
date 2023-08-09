@@ -50,15 +50,9 @@ const Header = () => {
             onChange={handleSearchChange}
           />
         </form>
-        </nav>
-       
-       
-       
+        </nav> 
       </div>
-
       <div className='d-flex align-items-center justify-content-between flex-row'>
-
-        
         <div className='user-cart'>
              <span><CgProfile fontSize={"1.3rem"}/></span>
              <span className='user-cart'>Profile</span>
@@ -66,7 +60,6 @@ const Header = () => {
                 <h6>Welcome</h6>
                 <div className='mb-3'>To access account and manage orders</div>
                 {!islogged && <Link to="/Auth"><span className='login-signup mb-3'>Login/Signup</span></Link> }
-              
                 {islogged && <span className='logout mb-3'>Logout</span>}
                 <hr/>
                 <span    className=" mb-1">Orders</span><br/>
