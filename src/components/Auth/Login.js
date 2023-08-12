@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./auth.css";
 import PropTypes from 'prop-types'; 
 import signup from "../../Assets/Images/auth.png";
@@ -11,6 +11,16 @@ const Login = (props) => {
       const handleSignup = () => {
         props.signupHandler(true);
       };
+const authmail=useRef();
+const authpass=useRef();
+const LogAuthHandler=(e)=>{
+  e.preventDefault();
+  let auth={
+    email:authmail.current.value,
+    password:authpass.current.value
+  }
+  console.log(auth);
+}
 
   return (
     <div className="card" style={{width: "24rem"}}>
@@ -20,13 +30,13 @@ const Login = (props) => {
           <Link onClick={handleLogin}><h4 className='me-2'>Log in</h4></Link> or <Link onClick={handleSignup}><h4 className='ms-2'>Signup</h4></Link>
         </div>
       
-       <form action=""> 
-        <input type="email" name="email" id="email" placeholder="Your email"/>
-        <input type="password" name="password" id="password" placeholder="Password"/>
+       <form onSubmit={LogAuthHandler}> 
+        <input type="email" name="email" id="email" placeholder="Your email" ref={authmail}/>
+        <input type="password" name="password" id="password" placeholder="Password" ref={authpass}/>
        
 
         <sup htmlFor="genral">By continuing. I agree to Terms of use Use and Privacy Policy</sup>
-        <input type="submit" value="Signup"/>
+        <input type="submit" value="Login"/>
        </form>
     </div>
   </div>

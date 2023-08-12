@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Signup from './Signup'
 import Login from "./Login"
 const Auth = () => {
-    const [logsigntoggle,setLogSignToggle]=useState(true);
+    const [logsigntoggle,setLogSignToggle]=useState(false);
   return (
     <div className='authbg'>
         {!logsigntoggle&&<Signup signupHandler={setLogSignToggle}/>}

@@ -33,14 +33,14 @@
     z-index: -1000;
     transition: all 0.5s ease-in-out;
     display: none;
-    pointer-events: none; /* Disable pointer events to prevent hover issues */
+    pointer-events: none; 
   }
   
   .user-cart:hover .profile {
     top: 55px;
     opacity: 1;
     display: block;
-    pointer-events: auto; /* Enable pointer events on hover */
+    pointer-events: auto; 
   }
   
 .login-signup,.logout{
@@ -186,6 +186,12 @@ nav span a{
     
     z-index: 10000;
 }
-
+.profile {
+  
+    right: 0px;
+ 
+    
+  }
+  
     
 }

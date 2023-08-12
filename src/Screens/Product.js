@@ -6,18 +6,18 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { GiPayMoney } from "react-icons/gi";
 import { FaExchangeAlt } from "react-icons/fa";
-
 import "./Product.css";
 import PropTypes from "prop-types";
-// import { useSelector } from "react-redux";
-
+import { useDispatch } from "react-redux";
+import { productAction } from "../Store/productSlice";
 const Product = () => {
   const [pin, setPin] = useState("");
-
-
+  const dispatch=useDispatch();
   const currentProduct = JSON.parse(localStorage.getItem("product"));
-  console.log(currentProduct);
-
+  const addtoCardHandler=()=>{
+    alert("Item added to the card");
+    dispatch(productAction.addToCart({...currentProduct}));
+  }
   const PincodeHandler = (e) => {
     if (e.target.value.length > 6) {
       setPin("");
@@ -36,7 +36,6 @@ const Product = () => {
             ))}
           </div>
         </div>
-
         <div className="col-lg-4 col-sm-12 pt-3">
           <h2 className="bold mb-2 product-title">{currentProduct.title}</h2>
           <h6 className="slate mb-2 fs-5">{currentProduct.description}</h6>
@@ -71,9 +70,8 @@ const Product = () => {
               <input type="radio" name="size" value="XL" /> XL
             </label>
           </div>
-
           <div className="addtoCartMobile">
-          <button className="addToCart">
+          <button className="addToCart" onClick={addtoCardHandler}>
             {" "}
             <LiaShoppingBagSolid fontSize={"1.3rem"} />
             Add to Cart
@@ -84,7 +82,6 @@ const Product = () => {
             Add Wish List
           </button>
           </div>
-
           <hr />
           <div className="delivery-options pt-3">
             <h6 className="bold">

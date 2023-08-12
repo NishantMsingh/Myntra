@@ -3,12 +3,11 @@ import React from 'react'
 import "./ProductCard.css"
 import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
-import { useDispatch } from 'react-redux';
-import productAction from "../Store/poductSlice";
+
+
 const ProductCard = (props) => {
-const dispatch=useDispatch();
+
  const ProductHnadler=(value)=>{
-    dispatch(productAction.actions.showProduct(value));
     localStorage.setItem("product",JSON.stringify(value));
 }
   return (
