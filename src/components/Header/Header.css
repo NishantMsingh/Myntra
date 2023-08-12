@@ -32,17 +32,14 @@
     border-radius: 4px;
     z-index: -1000;
     transition: all 0.5s ease-in-out;
-    display: none;
-    pointer-events: none; 
+    pointer-events: none;
   }
   
   .user-cart:hover .profile {
-    top: 55px;
+    top: calc(70px - 20px); 
     opacity: 1;
-    display: block;
-    pointer-events: auto; 
+    pointer-events: auto;
   }
-  
 .login-signup,.logout{
     border: 1px solid black;
     font-weight: 500;
@@ -187,9 +184,9 @@ nav span a{
     z-index: 10000;
 }
 .profile {
-  
-    right: 0px;
- 
+    right: -70px;
+    
+    box-shadow: 0px 10px 10px 5px #0808087a;
     
   }
   

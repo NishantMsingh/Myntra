@@ -21,7 +21,7 @@ import productmen42 from "../Images/productmen42.png";
 // eslint-disable-next-line
 const products = [
   {
-    productCode: 22834606,
+    productCode: "22834606",
     title: "WROGN",
     description: "Off-White Green Lightweight Printed Pure Cotton T-shirt",
     star: "3.5",
@@ -34,7 +34,7 @@ const products = [
     images: [productmen11, productmen12, productmen13, productmen14],
   },
   {
-    productCode: 22834323,
+    productCode: "22834323",
     title: "HRX by Hrithik Roshan",
     description: "Men White Printed Bio-Wash Lifestyle Tshirts",
     star: "4",
@@ -47,7 +47,7 @@ const products = [
     images: [productmen21, productmen22, productmen23, productmen24],
   },
   {
-    productCode: 23457476,
+    productCode: "23457476",
     title: "FORCE IX",
     description: "Pure Cotton Regular Casual T-shirt",
     star: "4",
@@ -60,7 +60,7 @@ const products = [
     images: [productmen31, productmen32],
   },
   {
-    productCode: 23457476,
+    productCode: "234574766",
     title: "FORCE IX",
     description: "Men Pure Cotton Typography Printed T-shirt",
     star: "4.3",

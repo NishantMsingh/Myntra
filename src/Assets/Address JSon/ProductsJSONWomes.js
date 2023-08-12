@@ -33,7 +33,7 @@ import product7womenImageCard from "../Images/productwomen71.png";
 // eslint-disable-next-line
 const products = [
   {
-    productCode: 21838776,
+    productCode: "21838776",
     title: "Kvsfab",
     description: "Embroidered Sequinned Ready to Wear Lehenga Choli With Dupatta",
     star: "4.5",
@@ -46,7 +46,7 @@ const products = [
     images: [productwomen11, productwomen12, productwomen13, productwomen14],
   },
   {
-    productCode: 22143838,
+    productCode: "22143838",
     title: "anayna",
     description: "Ethnic Motifs Printed Kurta",
     star: "4.2",
@@ -59,7 +59,7 @@ const products = [
     images: [productwomen21, productwomen22, productwomen23],
   },
   {
-    productCode: 2322979,
+    productCode: "2322979",
     title: "Anouk",
     description: "Women Pink Printed Straight Kurta",
     star: "4",
@@ -72,7 +72,7 @@ const products = [
     images: [productwomen31,productwomen32],
   }, 
    {
-    productCode: 15997724,
+    productCode: "15997724",
     title: "Tokyo Talkies",
     description: "Women Black Leather Crop Biker Jacket",
     star: "4",
@@ -85,7 +85,7 @@ const products = [
     images: [productwomen41,productwomen42],
   },
   {
-    productCode: 21465178,
+    productCode: "21465178",
     title: "Pepe Jeans",
     description: "Women Printed Hooded Pullover Cotton Sweatshirt",
     star: "4",
@@ -98,7 +98,7 @@ const products = [
     images: [productwomen51,productwomen52],
   },
     {
-    productCode: 16679638,
+    productCode: "16679638",
     title: "DressBerry",
     description: "Women Blue High-Rise Mildly Distressed Light Fade Stretchable Jeans",
     star: "4.8",
@@ -111,7 +111,7 @@ const products = [
     images: [productwomen61,productwomen62],
   },
   {
-    productCode: 19120048,
+    productCode: "19120048",
     title: "MANGO",
     description: "Black Solid Structured Handheld Bag with Detachable Sling Strap",
     star: "4.8",

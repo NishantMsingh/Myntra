@@ -6,17 +6,20 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { GiPayMoney } from "react-icons/gi";
 import { FaExchangeAlt } from "react-icons/fa";
+import { useDispatch } from "react-redux";
 import "./Product.css";
 import PropTypes from "prop-types";
-import { useDispatch } from "react-redux";
-import { productAction } from "../Store/productSlice";
+import { addToCart } from "../store/cartSlice";
+
+
 const Product = () => {
-  const [pin, setPin] = useState("");
-  const dispatch=useDispatch();
-  const currentProduct = JSON.parse(localStorage.getItem("product"));
-  const addtoCardHandler=()=>{
+
+const dispatch=useDispatch();
+const [pin, setPin] = useState("");
+const currentProduct = JSON.parse(localStorage.getItem("product"));
+const addtoCardHandler=()=>{
+  dispatch(addToCart(currentProduct));
     alert("Item added to the card");
-    dispatch(productAction.addToCart({...currentProduct}));
   }
   const PincodeHandler = (e) => {
     if (e.target.value.length > 6) {
