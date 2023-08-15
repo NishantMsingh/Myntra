@@ -1,0 +1,19 @@
+.img-control{
+    width: 60px;
+}
+
+.payment{
+    font-size: 13px;
+    user-select: none;
+}
+
+.text-green{
+    color: #14CDA8;
+}
+
+
+@media (max-width:768px) {
+ .media-cart{
+    display: none;
+ }   
+}

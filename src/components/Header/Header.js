@@ -6,16 +6,16 @@ import { RiSearchLine } from 'react-icons/ri';
 import { CgProfile } from 'react-icons/cg';
 import { CgMenuRight } from 'react-icons/cg';
 
-
 import { BsFillBagFill } from 'react-icons/bs';
 import logo from "../../Assets/Images/Logo.png";
 import { Link, NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
   const islogged=false;
   const [menu, setMenu] = useState(false);
   const [searchValue, setSearchValue] = useState('');
-
+ const cartlength=useSelector((state => state.cart));
   const menuHandler = () => {
     if (window.innerWidth <= 1000) {
       setMenu(!menu);
@@ -78,8 +78,8 @@ const Header = () => {
         </div>
       
         <div className='user-cart-wish pos-top-5'>
-             <span><sup className='cart-number'>200</sup></span>
-             <span onClick={menuHandler} className='d-flex flex-row'><BsFillBagFill fontSize={"1.3rem"}/> </span>
+             <span><sup className='cart-number'>{cartlength.length>0?cartlength.length:0}</sup></span>
+             <Link to="/checkOut"  className='d-flex flex-row'><BsFillBagFill fontSize={"1.3rem"} color='black'/> </Link>
              <span>Bag</span>
         </div> 
         <div className='user-cart-wish burger'>

@@ -32,7 +32,16 @@ const LogAuthHandler=(e)=>{
       
        <form onSubmit={LogAuthHandler}> 
         <input type="email" name="email" id="email" placeholder="Your email" ref={authmail}/>
-        <input type="password" name="password" id="password" placeholder="Password" ref={authpass}/>
+        <input
+  type="password"
+  name="password"
+  id="password"
+  placeholder="Password"
+  ref={authpass}
+  autoComplete="password"
+  required
+/>
+
        
 
         <sup htmlFor="genral">By continuing. I agree to Terms of use Use and Privacy Policy</sup>

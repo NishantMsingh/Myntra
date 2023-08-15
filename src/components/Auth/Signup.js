@@ -44,8 +44,8 @@ const Signup = (props) => {
           <input type="text" name="name" id="text" placeholder="Your name" ref={authname} required/>
           <input type="number" name="phone" id="phone" placeholder="Mobile number" ref={authnumber} required/>
           <input type="email" name="email" id="email" placeholder="Your email"  ref={authmail} required/>
-          <input type="password" name="password" id="password" placeholder="Password" ref={authpass} required/>
-          <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" ref={authconfirmpassword} required/> <br />
+          <input autoComplete='new-password' type="password" name="password" id="password" placeholder="Password" ref={authpass} required/>
+          <input autoComplete='new-password' type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" ref={authconfirmpassword} required/> <br />
 
           <label htmlFor="general">By continuing, I agree to Terms of Use and Privacy Policy</label>
           <input type="submit" value="Signup" />

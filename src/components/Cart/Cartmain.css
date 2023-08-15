@@ -1,0 +1,78 @@
+.bg-color-cart{
+    background: #E6E6E6;
+}
+.cartBold{
+    font-weight: 500;
+    color: #696F74;
+}
+.empty-cart-img{
+    width: 10% !important;
+}
+.min-hight{
+    min-height: 80vh;
+   
+    
+}
+
+.border-right{
+    border-right: 1px solid green;
+}
+.fs-10{
+    font-size: 16px;
+}
+
+.product-cart-list-control{
+   border:1px solid rgba(124, 124, 124, 0.445);
+    padding: 2px;
+    max-width: 99%;
+    height: 120px ;
+    margin-bottom: 10px;
+}
+
+.place-order-btn{
+
+    background-color: rgb(243, 9, 68);
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    border: none;
+    padding: 5px 2px;
+}
+.rap-rev{
+    flex-wrap: wrap-reverse;
+}
+.place-order-btn:hover{
+
+    background-color: rgb(206, 2, 53);
+   
+ 
+}
+.coupon-btn{
+    border: 1px solid rgb(243, 9, 68);
+    color: rgb(243, 9, 68);
+    background-color: transparent;
+    padding: 3px;
+    border-radius: 3px;
+}
+.myntra-text{
+    color: rgb(243, 9, 68);
+}
+.empty-button{
+    border: 1px solid rgb(243, 9, 68);
+    color: rgb(243, 9, 68);
+    background-color: transparent;
+    padding: 5px 0px;
+    font-weight: 500;
+}
+.empty-container{
+    height: 90vh;
+}
+
+@media (max-width:768px) {
+    .product-cart-list-control{
+         height: 60px;
+      
+     }
+  
+}
