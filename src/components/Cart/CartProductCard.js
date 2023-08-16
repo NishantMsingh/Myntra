@@ -3,7 +3,7 @@ import img from "../../Assets/Images/productmen11.png";
 import {RxCross2} from "react-icons/rx"
 const CartProductCard = () => {
   return (
-     <div className='d-flex flex-row justify-content-start product-cart-list-control rounded ovr-hide'>
+     <div className='d-flex flex-row justify-content-start product-cart-list-control  '>
       <img src={img} alt='' className='rounded'/>
       <div className='d-flex flex-column w-100'>
       <div className="p-2 d-flex align-items-center justify-content-between ">
