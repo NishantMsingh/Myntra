@@ -13,9 +13,18 @@
    
     
 }
+.custom-padding-left{
+    padding-left: 1rem;
+}
 
 .border-right{
-    border-right: 1px solid green;
+    border-right: 1px solid rgba(71, 71, 71, 0.288);
+}
+.bor-bottom{
+    border-bottom: 1px solid rgba(71, 71, 71, 0.288);
+}
+.bor-top{
+    border-top: 1px solid rgba(71, 71, 71, 0.288);
 }
 .fs-10{
     font-size: 16px;
@@ -114,6 +123,12 @@ cursor: pointer;
          overflow-y: hidden;
       
      }
-    
+     .custom-padding-left{
+        padding-left: 0;
+     }
+
+    .border-right{
+    border-right: 1px solid rgba(71, 71, 71, 0);
+}
     
 }

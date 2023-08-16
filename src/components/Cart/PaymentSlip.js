@@ -2,7 +2,7 @@ import React from 'react'
 import {BsTags} from "react-icons/bs"
 const PaymentSlip = () => {
   return (
-    <div className="col-lg-3 col-sm-12 col-md-12  text-start pt-3 ">
+    <div className="col-lg-3 col-sm-12 col-md-12  text-start pt-3 custom-padding-left  pt-5">
               <sup className='cartBold'>COUPON</sup>
               <div className='d-flex align-items-ceter justify-content-between p-1'>
                  <span className='cartBold'> <BsTags/>  Apply coupons</span>

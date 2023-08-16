@@ -4,7 +4,7 @@ import {SiAdguard} from "react-icons/si";
 import title from "../../Assets/Images/Logo.png"
 const CartHeader = () => {
   return (
-   <div className='container-fluid border-bottom border-secondary'>
+   <div className='container-fluid bor-bottom'>
      <header className='container d-flex align-items-center justify-content-between pt-4 pb-2 '>
       <div>
         <img src={title} alt='Myntra' className='img-control'/>
