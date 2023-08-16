@@ -1,7 +1,11 @@
 import React from 'react'
 import {BsTags} from "react-icons/bs"
+import AddressModal from './AddressModal'
+
 const PaymentSlip = () => {
+   const [modalShow, setModalShow] = React.useState(false);
   return (
+  <>
     <div className="col-lg-3 col-sm-12 col-md-12  text-start pt-3 custom-padding-left  pt-5">
               <sup className='cartBold'>COUPON</sup>
               <div className='d-flex align-items-ceter justify-content-between p-1'>
@@ -32,8 +36,11 @@ const PaymentSlip = () => {
                  <span className='cartBold' >Total Amount</span>
                  <span className='cartBold'>$200</span>
               </div>
-              <button className=' place-order-btn'> Place Order</button>
+              <button className='place-order-btn' onClick={() => setModalShow(true)}> Place Order</button>
             </div>
+            <AddressModal   show={modalShow}
+        onHide={() => setModalShow(false)}/>
+  </>
   )
 }
 

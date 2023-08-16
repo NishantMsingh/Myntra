@@ -6,14 +6,19 @@ import Trend4 from "../Assets/Images/Trending4.png"
 
 const Trending = () => {
   return (
-   <div className='container-fluid mt-3'>
+   
   
- <div className='mt-3 mb-3 container'>
+ <div className='mt-3 mb-3 container-fluid'>
  <h3 className='bold mb-3'>TRENDING IN ACCESSORIES</h3>
  <div className='d-flex custom-scrollbar overflow-auto'>
     
       <img src={Trend1} alt='' className='img-fluid rounded'/>
       <img src={Trend2} alt='' className='img-fluid rounded'/>
+      <img src={Trend3} alt='' className='img-fluid rounded'/>
+      <img src={Trend4} alt='' className='img-fluid rounded'/>
+      <img src={Trend1} alt='' className='img-fluid rounded'/>
+      <img src={Trend3} alt='' className='img-fluid rounded'/>
+
       <img src={Trend3} alt='' className='img-fluid rounded'/>
       <img src={Trend4} alt='' className='img-fluid rounded'/>
       <img src={Trend1} alt='' className='img-fluid rounded'/>
@@ -24,7 +29,7 @@ const Trending = () => {
      
  
   </div>
-   </div>
+
   )
 }
 

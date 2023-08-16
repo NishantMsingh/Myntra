@@ -8,9 +8,12 @@ import { CgMenuRight } from "react-icons/cg";
 import { BsFillBagFill } from "react-icons/bs";
 import logo from "../../Assets/Images/Logo.png";
 import { Link, NavLink } from "react-router-dom";
+import { useContext } from "react";
+import CartContext from "../../context/Cart-context";
 
 const Header = () => {
   const islogged = false;
+  const ctx=useContext(CartContext);
   const [menu, setMenu] = useState(false);
   const [searchValue, setSearchValue] = useState("");
 
@@ -119,7 +122,7 @@ const Header = () => {
 
         <div className="user-cart-wish pos-top-5">
           <span>
-            <sup className="cart-number">200</sup>
+            <sup className="cart-number">{ctx.product.length}</sup>
           </span>
           <Link to="/checkOut" className="d-flex flex-row">
             <BsFillBagFill fontSize={"1.3rem"} color="black" />{" "}

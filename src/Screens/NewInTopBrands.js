@@ -8,9 +8,9 @@ import top6 from "../Assets/Images/topbrand6.png";
 import top8 from "../Assets/Images/topbrand8.png";
 const NewInTopBrands = () => {
   return (
-    <div className='container-fluid mt-3'>
+   
     
-    <div className=' mt-3 mb-3 container'>
+    <div className=' mt-3 mb-3 container-fluid'>
     <h3 className='bold mb-3'>NEW IN TOP BRANDS</h3>
    <div className='d-flex custom-scrollbar overflow-auto'>
       <img src={top1} alt='' className='img-fluid rounded'/>
@@ -19,10 +19,14 @@ const NewInTopBrands = () => {
       <img src={top4} alt='' className='img-fluid rounded'/>
       <img src={top5} alt='' className='img-fluid rounded'/>
       <img src={top6} alt='' className='img-fluid rounded'/>
+      <img src={top3} alt='' className='img-fluid rounded'/>
+      <img src={top4} alt='' className='img-fluid rounded'/>
+      <img src={top5} alt='' className='img-fluid rounded'/>
+      <img src={top6} alt='' className='img-fluid rounded'/>
       <img src={top8} alt='' className='img-fluid rounded'/>
    </div>
   </div>
-   </div>
+  
   )
 }
 

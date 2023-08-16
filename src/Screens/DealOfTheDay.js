@@ -9,9 +9,9 @@ import dealoftheday6 from "../Assets/Images/dealoftheday6.png";
 import dealoftheday8 from "../Assets/Images/dealoftheday8.png";
 const DealOfTheDay = () => {
   return (
-   <div className='container-fluid mt-3'>
+  
     
- <div className=' mt-3 mb-3 container'>
+ <div className=' mt-3 mb-3 container-fluid '>
  <h3 className='bold mb-3'>DEAL OF THE DAY</h3>
    <div className='d-flex custom-scrollbar overflow-auto'>
       <img src={dealoftheday1} alt='' className='img-fluid rounded'/>
@@ -27,7 +27,7 @@ const DealOfTheDay = () => {
      
    </div>
   </div>
-   </div>
+
   )
 }
 

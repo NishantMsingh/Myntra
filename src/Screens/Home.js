@@ -10,8 +10,9 @@ import ColorsOfTheSeason from './ColorsOfTheSeason'
 const Home = () => {
   return (
     <div className='pt-5'>
-      <Trending/>
+    
       <Carousel/>
+      <Trending/>
       <DealOfTheDay/>
       <GiftCards/>
       <NewInTopBrands/>

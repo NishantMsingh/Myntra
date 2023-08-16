@@ -11,8 +11,8 @@ import Auth from "./components/Auth/Auth";
 import CartParent from "./components/Cart/CartParent";
 
 
-
 function App() {
+  
   return (
     <>
       <BrowserRouter>

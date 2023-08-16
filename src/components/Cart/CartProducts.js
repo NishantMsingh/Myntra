@@ -1,14 +1,15 @@
 // CartProducts.js
 import React from 'react';
 import CartProductCard from './CartProductCard';
-import { products } from "../../Assets/Address JSon/ProductsJSONWomes";
-
+import { useContext } from "react";
+import CartContext from "../../context/Cart-context";
 const CartProducts = () => {
+  const ctx=useContext(CartContext);
   return (
     <div className="col-lg-9 col-sm-12 col-md-12 border-right mx-hight custom-padding-left  pt-5">
       <div className='address'></div>
       <div className='cart-Product-list mt-1'>
-        {products.map(value => (
+        {ctx.product.map(value => (
           <CartProductCard products={value} key={value.productCode} />
         ))}
       </div>

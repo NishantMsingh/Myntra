@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import { TbTruckDelivery } from "react-icons/tb";
 import { FaMapMarkerAlt } from "react-icons/fa";
@@ -6,12 +6,21 @@ import { CiDeliveryTruck } from "react-icons/ci";
 import { GiPayMoney } from "react-icons/gi";
 import { FaExchangeAlt } from "react-icons/fa";
 import "./Product.css";
+import { useContext } from "react";
 import PropTypes from "prop-types";
+import CartContext from "../context/Cart-context";
 const Product = () => {
+  
 const [pin, setPin] = useState("");
 const currentProduct = JSON.parse(localStorage.getItem("product"));
-const addtoCardHandler=()=>{
+const ctx=useContext(CartContext);
 
+
+const addtoCardHandler=()=>{ 
+    ctx.addtoCart(currentProduct);
+
+      console.log(ctx.product.length);
+ 
     alert("Item added to the card");
   }
   const PincodeHandler = (e) => {

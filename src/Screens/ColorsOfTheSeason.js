@@ -10,9 +10,9 @@ import color7 from "../Assets/Images/colors7.png"
 import color8 from "../Assets/Images/colors8.png"
 const ColorsOfTheSeason = () => {
   return (
-   <div className='container-fluid mt-3'>
+
   
- <div className='mt-3 mb-3 container'>
+ <div className='mt-3 mb-3 container-fluid'>
  <h3 className='bold mb-3'>GIFTING CARDS</h3>
       <div className="row justify-content-center align-items-center g-2">
         <div className="col-lg-3 col-md-4 col-sm-12"><img src={color1} alt='Gift' className='img-fluid rounded'/></div>
@@ -27,7 +27,7 @@ const ColorsOfTheSeason = () => {
      
  
   </div>
-   </div>
+   
   )
 }
 

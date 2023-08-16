@@ -11,9 +11,9 @@ import trendhim8 from "../Assets/Images/trendhim8.png";
 
 const TrendsForHim = () => {
   return (
-   <div className='container-fluid mt-3'>
+ 
   
- <div className=' mt-3 mb-3 container'>
+ <div className=' mt-3 mb-3 container-fluid'>
  <h3 className='bold mb-3'>TRENDS FOR HIM</h3>
    <div className='d-flex custom-scrollbar overflow-auto'>
       <img src={trendhim1} alt='' className='img-fluid rounded'/>
@@ -28,7 +28,7 @@ const TrendsForHim = () => {
      
    </div>
   </div>
-   </div>
+
   )
 }
 

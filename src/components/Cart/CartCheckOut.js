@@ -9,6 +9,7 @@ const CartCheckOut = () => {
            
             <CartProducts/>
             <PaymentSlip/>
+          
            
         </div>
     </div>

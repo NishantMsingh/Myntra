@@ -14,8 +14,8 @@ import productwomen31 from "../Images/productwomen31.png";
 import productwomen32 from "../Images/productwomen32.png";
 import product3womenImageCard from "../Images/productwomen31.png";
 
-import productwomen41 from "../Images/productwomen31.png";
-import productwomen42 from "../Images/productwomen32.png";
+import productwomen41 from "../Images/productwomen41.png";
+import productwomen42 from "../Images/productwomen42.png";
 import product4womenImageCard from "../Images/productwomen41.png";
 
 import productwomen51 from "../Images/productwomen51.png";
