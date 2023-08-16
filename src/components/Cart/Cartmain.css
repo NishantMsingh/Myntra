@@ -119,7 +119,7 @@ cursor: pointer;
 }
 @media (max-width:768px) {
     .product-cart-list-control{
-         height: 160px;
+         min-height: 170px;
          overflow-y: hidden;
       
      }

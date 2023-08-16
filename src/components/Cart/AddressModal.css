@@ -1,0 +1,33 @@
+/* AddressModal.css */
+
+/* ... your existing styles ... */
+
+.address-section {
+    margin-bottom: 20px;
+  }
+  
+  .section-heading {
+    margin-bottom: 10px;
+  
+  }
+  
+  /* Style your input fields and checkboxes here */
+  /* Example styles: */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .checkbox-input {
+    margin-right: 10px;
+  }
+  

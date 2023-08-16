@@ -1,8 +1,8 @@
 import React from 'react'
 import {BsTags} from "react-icons/bs"
 import AddressModal from './AddressModal'
-
-const PaymentSlip = () => {
+import PropTypes from 'prop-types';
+const PaymentSlip = (props) => {
    const [modalShow, setModalShow] = React.useState(false);
   return (
   <>
@@ -39,9 +39,11 @@ const PaymentSlip = () => {
               <button className='place-order-btn' onClick={() => setModalShow(true)}> Place Order</button>
             </div>
             <AddressModal   show={modalShow}
-        onHide={() => setModalShow(false)}/>
+        onHide={() => setModalShow(false)} addressHandler={props.addressHandler}/>
   </>
   )
 }
-
+PaymentSlip.propTypes={
+   addressHandler: PropTypes.func.isRequired,
+}
 export default PaymentSlip

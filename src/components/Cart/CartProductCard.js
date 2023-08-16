@@ -9,7 +9,7 @@ const CartProductCard = (props) => {
     let con = window.confirm("Are you sure?");
     console.log(con);
   };
-console.log(props.products);
+
   return (
     <div className='d-flex flex-row justify-content-start product-cart-list-control'>
       <img src={props.products.imageCard} alt='' className='' />
