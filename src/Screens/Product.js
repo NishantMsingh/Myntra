@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import { TbTruckDelivery } from "react-icons/tb";
@@ -6,19 +5,13 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { GiPayMoney } from "react-icons/gi";
 import { FaExchangeAlt } from "react-icons/fa";
-import { useDispatch } from "react-redux";
 import "./Product.css";
 import PropTypes from "prop-types";
-import { addToCart } from "../Hub/cartSlice";
-
-
 const Product = () => {
-
-const dispatch=useDispatch();
 const [pin, setPin] = useState("");
 const currentProduct = JSON.parse(localStorage.getItem("product"));
 const addtoCardHandler=()=>{
-  dispatch(addToCart(currentProduct));
+
     alert("Item added to the card");
   }
   const PincodeHandler = (e) => {
