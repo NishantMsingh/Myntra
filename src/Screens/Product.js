@@ -9,7 +9,7 @@ import { FaExchangeAlt } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import "./Product.css";
 import PropTypes from "prop-types";
-import { addToCart } from "../store/cartSlice";
+import { addToCart } from "../Hub/cartSlice";
 
 
 const Product = () => {
