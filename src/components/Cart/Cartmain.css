@@ -27,7 +27,10 @@
     border-top: 1px solid rgba(71, 71, 71, 0.288);
 }
 .fs-10{
-    font-size: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0;
+    
 }
 .pos-card-rel{
     position: relative;
@@ -71,7 +74,15 @@
     height: 130px;
     margin-bottom: 10px;
 }
-
+.control-offer{
+    border:1px solid rgba(124, 124, 124, 0.445);
+     padding: 2px;
+     max-width: 99%;
+     min-height: 130px;
+     margin-bottom: 10px;
+     transition: all .5s ease-in-out;
+ }
+ 
 .place-order-btn{
 
     background-color: rgb(243, 9, 68);
@@ -88,12 +99,24 @@
 .place-order-btn:hover{
 
     background-color: rgb(206, 2, 53);
-   
- 
+}
+.payment-button{
+    border: none;
+    color: #696F74;
+    border-bottom:1px solid rgb(128, 127, 127);
+    font-weight: 500;
+    padding: 10px 6px;
+    background-color: rgba(61, 60, 60, 0.336);
+}
+.payment-button.active{
+  
+    background-color: white;
+    border-left: 2px solid rgb(243, 9, 68);
+    color:  rgb(243, 9, 68);;
 }
 .coupon-btn{
     border: 1px solid rgb(243, 9, 68);
-    color: rgb(243, 9, 68);
+    color: rgba(243, 9, 67, 0.527);
     background-color: transparent;
     padding: 3px;
     border-radius: 3px;
@@ -107,6 +130,11 @@
     background-color: transparent;
     padding: 5px 0px;
     font-weight: 500;
+}
+.empty-button:hover{
+
+    background-color: rgb(243, 9, 68);
+   color: white;
 }
 .empty-container{
     height: 90vh;

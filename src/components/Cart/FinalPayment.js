@@ -1,18 +1,12 @@
 import React from 'react'
-import {BsTags} from "react-icons/bs"
-import AddressModal from './AddressModal'
-import PropTypes from 'prop-types';
-const PaymentSlip = (props) => {
-   const [modalShow, setModalShow] = React.useState(false);
+
+
+const FinalPayment = () => {
+   
   return (
   <>
-    <div className="col-lg-3 col-sm-12 col-md-12  text-start pt-3 custom-padding-left  pt-5">
-              <sup className='cartBold'>COUPON</sup>
-              <div className='d-flex align-items-ceter justify-content-between p-1'>
-                 <span className='cartBold'> <BsTags/>  Apply coupons</span>
-               <span className='fs-10 coupon-button'>Apply</span>
-              </div>
-              <hr/>
+    <div className="col-lg-3 col-sm-12 col-md-6  text-start pt-3 custom-padding-left  pt-5 min-hight">
+              
               <sup className='cartBold'>Price details(0)</sup>
               <div className='d-flex align-items-ceter justify-content-between p-1'>
                  <span > Total MRP</span>
@@ -36,14 +30,11 @@ const PaymentSlip = (props) => {
                  <span className='cartBold' >Total Amount</span>
                  <span className='cartBold'>$200</span>
               </div>
-              <button className='place-order-btn' onClick={() => setModalShow(true)}> Place Order</button>
+           
             </div>
-            <AddressModal   show={modalShow}
-        onHide={() => setModalShow(false)} addressHandler={props.addressHandler}/>
+           
   </>
   )
 }
-PaymentSlip.propTypes={
-   addressHandler: PropTypes.func.isRequired,
-}
-export default PaymentSlip
+
+export default FinalPayment
