@@ -9,11 +9,11 @@ import { Link } from 'react-router-dom';
 const Signup = (props) => {
    
   const handleLogin = () => {
-    props.signupHandler(false);
+    props.signupHandler(true);
   };
 
   const handleSignup = () => {
-    props.signupHandler(true);
+    props.signupHandler(false);
   };
   const authmail=useRef();
   const authpass=useRef();
