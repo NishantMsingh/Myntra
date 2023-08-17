@@ -7,6 +7,7 @@ import NewInTopBrands from './NewInTopBrands'
 import TrendsForHer from './TrendsForHer'
 import TrendsForHim from './TrendsForHim'
 import ColorsOfTheSeason from './ColorsOfTheSeason'
+
 const Home = () => {
   return (
     <div className='pt-5'>

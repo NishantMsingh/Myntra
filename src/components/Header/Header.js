@@ -72,6 +72,7 @@ const Header = () => {
             </span>
             <input
               type="text"
+              className="input-header"
               placeholder="Search for product, brand and more..."
               value={searchValue}
               onChange={handleSearchChange}

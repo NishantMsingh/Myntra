@@ -88,7 +88,7 @@
 }
 .header-search{
     border-radius: 4px;
-   background-color: #706e6e3d;
+   background-color: #cfcfcf13;
    outline: none;
    padding: 4px 8px;
    margin-left: 10px;
@@ -97,16 +97,16 @@
    align-items: center;
    justify-content: center;
 }
-.header-search input{
-    margin-left: 1rem;
+.header-search .input-header{
+    margin-left: .5rem;
     margin-right: 1rem;
     border: none;
-    background: #00000000;
-  
+    background: #cfcfcf00;
     outline: none;
     position: relative;
 
 }
+
 .pos{
     position: relative;
     top: -5px;

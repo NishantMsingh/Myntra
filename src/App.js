@@ -2,15 +2,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Home from "./Screens/Home";
-import Men from "./Screens/Men";
-import Women from "./Screens/Women";
-import Product from "./Screens/Product";
 import React from "react";
-import Auth from "./components/Auth/Auth";
-import CartParent from "./components/Cart/CartParent";
-import ConfirmOrder from "./Screens/ConfirmOrder";
-
+import { lazy, Suspense } from 'react';
+// Lazy 
+const LazyConfirmedOrder = lazy(() => import('./Screens/ConfirmOrder'));
+const LazyHome = lazy(() => import('./Screens/Home'));
+const LazyAuth =lazy(()=>import("./components/Auth/Auth"));
+const LazyCartParent=lazy(()=>import("./components/Cart/CartParent"));
+const LazyMen=lazy(()=>import("./Screens/Men"));
+const LazyWomen=lazy(()=>import("./Screens/Women"));
+const LazyProduct=lazy(()=>import("./Screens/Product"));
 
 function App() {
   
@@ -23,7 +24,9 @@ function App() {
             element={
               <>
                 <Header />
-                <Home />
+               <Suspense fallback={<div>Loading...</div>}>
+               <LazyHome  />
+               </Suspense>
                 <Footer />
               </>
             }
@@ -31,18 +34,27 @@ function App() {
           <Route
             path="/ConfirmedOrder"
             element={
-              <ConfirmOrder/>
+              <Suspense fallback={<div>Loading...</div>}>
+              <LazyConfirmedOrder  />
+            </Suspense>
                 
           
             }
           />
-          <Route path="/Auth" element={<Auth />} />
+          <Route path="/Auth" element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <LazyAuth/>
+            </Suspense>
+          } />
           <Route
             path="/product/:productCode"
             element={
               <>
                 <Header />
-                <Product location={location} />
+              
+                <Suspense fallback={<div>Loading...</div>}>
+              <LazyProduct location={location}/>
+            </Suspense>
                 <Footer />
               </>
             }
@@ -52,7 +64,9 @@ function App() {
             element={
               <>
                 <Header />
-                <Women />
+                <Suspense fallback={<div>Loading...</div>}>
+               <LazyWomen  />
+               </Suspense>
                 <Footer />
               </>
             }
@@ -62,7 +76,9 @@ function App() {
             element={
               <>
                 <Header />
-                <Men />
+                <Suspense fallback={<div>Loading...</div>}>
+               <LazyMen  />
+               </Suspense>
                 <Footer />
               </>
             }
@@ -72,12 +88,18 @@ function App() {
             element={
               <>
                 <Header />
-                <Home />
+                <Suspense fallback={<div>Loading...</div>}>
+               <LazyHome  />
+               </Suspense>
                 <Footer />
               </>
             }
           />
-          <Route path="/checkOut" element={<CartParent/>}/>
+          <Route path="/checkOut" element={
+            <Suspense fallback={<div>Loading...</div>}> 
+              <LazyCartParent/>
+            </Suspense>
+          }/>
         </Routes>
       </BrowserRouter>
     </>
