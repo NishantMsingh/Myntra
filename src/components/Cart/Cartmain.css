@@ -141,7 +141,7 @@ overflow: hidden;
     color: rgb(243, 9, 68);
 }
 .bg-myntra-light{
-background-color:  rgba(243, 9, 67, 0.192);
+background-color:  rgba(243, 9, 67, 0.055);
 transition: all .5s ease-in-out
 }
 .empty-button{

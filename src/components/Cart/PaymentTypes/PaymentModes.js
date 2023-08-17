@@ -6,6 +6,7 @@ import { BsCreditCard } from "react-icons/bs";
 import { FaGooglePay } from "react-icons/fa";
 import { BsWallet } from "react-icons/bs";
 import { BsBank } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const PaymentModes = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -81,10 +82,10 @@ const PaymentModes = () => {
                 Rs 10 will get charged extra for the Pay on Delivery. You can
                 pay via cash/upi while delivery
               </p>
-              <button className="slate boldCart empty-button p-1  mb-2 ms-1 rounded w-90">
+              <Link to="/ConfirmedOrder"><button className="slate boldCart empty-button ps-2 pe-2  ms-1 mb-3 w-90 rounded">
                 {" "}
                 PLACE ORDER
-              </button>
+              </button>  </Link>
             </div>
           </div>
           <div
@@ -118,10 +119,10 @@ const PaymentModes = () => {
               </a>
               </p>
               <input type='text' placeholder="Transaction id" className="w-90 ms-1 mb-1"/> 
-              <button className="slate boldCart empty-button ps-2 pe-2  ms-1 mb-3 w-90 rounded">
+               <Link to="/ConfirmedOrder"><button className="slate boldCart empty-button ps-2 pe-2  ms-1 mb-3 w-90 rounded">
                 {" "}
                 PLACE ORDER
-              </button>
+              </button>  </Link>
             </div>
           </div>
         </div>

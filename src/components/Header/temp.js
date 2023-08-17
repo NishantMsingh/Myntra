@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <header className="header-absolute bg-d">
       <div className="">
-        <img src={logo} alt="LOGO" className="w-10" />
+        <img src={logo} alt="LOGO" className="img-fluid w-10 me-3" />
       </div>
       <div className="d-flex align-items-center justify-content-between flex-row">
         <nav className={menu ? "heigh" : "dark"}>

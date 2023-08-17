@@ -1,0 +1,32 @@
+/* styles.css */
+
+.confirmed-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  .pos{
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+  .order-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .delivery-date {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .redirect-timer {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Add any additional styling as needed */
+  
