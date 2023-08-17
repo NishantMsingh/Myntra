@@ -82,7 +82,13 @@
      margin-bottom: 10px;
      transition: all .5s ease-in-out;
  }
- 
+ .w-90{
+    width: 97%;
+ }
+ .pay-hight{
+height:70px;
+overflow: hidden;
+ }
 .place-order-btn{
 
     background-color: rgb(243, 9, 68);
@@ -124,11 +130,13 @@
     padding: 3px;
     border-radius: 3px;
 }
+
 .myntra-text{
     color: rgb(243, 9, 68);
 }
 .bg-myntra-light{
 background-color:  rgba(243, 9, 67, 0.192);
+transition: all .5s ease-in-out
 }
 .empty-button{
     border: 1px solid rgb(243, 9, 68);
@@ -136,6 +144,11 @@ background-color:  rgba(243, 9, 67, 0.192);
     background-color: transparent;
     padding: 5px 0px;
     font-weight: 500;
+    transition: all .5s ease-in-out;
+}
+.form-check-input:checked {
+    background-color: rgb(243, 9, 68);
+    border-color: rgb(243, 9, 68);
 }
 .empty-button:hover{
 
@@ -164,5 +177,8 @@ cursor: pointer;
     .border-right{
     border-right: 1px solid rgba(71, 71, 71, 0);
 }
-    
+    .w100{
+       
+        font-size: 10px;
+    }
 }
