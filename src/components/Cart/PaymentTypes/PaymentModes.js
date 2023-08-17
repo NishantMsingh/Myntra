@@ -17,7 +17,7 @@ const PaymentModes = () => {
   return (
     <div className="control-offer ">
       <div className="row justify-content-center align-items-start">
-        <div className="col-lg-6 col-md-6 col-sm-6 ">
+        <div className="col-lg-6 col-md-12 col-sm-12 ">
           <button className="w-100 payment-button active text-start">
             <PiShootingStarFill /> Recomanded
           </button>
@@ -49,7 +49,7 @@ const PaymentModes = () => {
             <SiFlipkart /> EMI / Pay Later
           </button>
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-6 pt-3 ">
+        <div className="col-lg-6 col-md-12 col-sm-12  ">
           <h5 className="slate ">Recommended Payment Options</h5>
           <div
             className={`bg-myntra-light rounded ${
@@ -76,12 +76,12 @@ const PaymentModes = () => {
               </label>
               <br />
             </div>
-            <div>
+            <div className={selectedOption === "COD" ? "opacity-show" : "opacity-hide"}>
               <p className="fs-6 ms-1">
                 Rs 10 will get charged extra for the Pay on Delivery. You can
                 pay via cash/upi while delivery
               </p>
-              <button className="slate boldCart empty-button p-1  pb-2 w-90">
+              <button className="slate boldCart empty-button p-1  mb-2 ms-1 rounded w-90">
                 {" "}
                 PLACE ORDER
               </button>
@@ -97,7 +97,7 @@ const PaymentModes = () => {
             
             >
               <input
-                className="form-check-input ms-1 me-1 pointer "
+                className="form-check-input ms-1 me-1 pointer"
                 type="radio"
                 name="flexRadioDefault1"
                 id="flexRadioDefault2"
@@ -111,14 +111,14 @@ const PaymentModes = () => {
                 GooglePay
               </label>
             </div>
-            <div>
+            <div className={selectedOption === "GooglePay" ? "opacity-show" : "opacity-hide"}>
               <p className="fs-6 ms-1 text-light">
               <a href='upi://nishantkumarsingh16019@okhdfcbank'>
               Pay & submit : nishantkumarsingh16019@okhdfc<br/>bank
               </a>
               </p>
               <input type='text' placeholder="Transaction id" className="w-90 ms-1 mb-1"/> 
-              <button className="slate boldCart empty-button ps-2 pe-2  ms-1 mb-3 w-90">
+              <button className="slate boldCart empty-button ps-2 pe-2  ms-1 mb-3 w-90 rounded">
                 {" "}
                 PLACE ORDER
               </button>

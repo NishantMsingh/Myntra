@@ -85,8 +85,14 @@
  .w-90{
     width: 97%;
  }
+ .opacity-show{
+    opacity: 1;
+ }
+ .opacity-hide{
+    opacity: 0;
+ }
  .pay-hight{
-height:70px;
+ height:70px;
 overflow: hidden;
  }
 .place-order-btn{

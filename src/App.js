@@ -9,6 +9,7 @@ import Product from "./Screens/Product";
 import React from "react";
 import Auth from "./components/Auth/Auth";
 import CartParent from "./components/Cart/CartParent";
+import ConfirmOrder from "./Screens/ConfirmOrder";
 
 
 function App() {
@@ -25,6 +26,14 @@ function App() {
                 <Home />
                 <Footer />
               </>
+            }
+          />
+          <Route
+            path="/ConfirmedOrder"
+            element={
+              <ConfirmOrder/>
+                
+          
             }
           />
           <Route path="/Auth" element={<Auth />} />
