@@ -19,7 +19,7 @@ const Offer = () => {
   const visibleOffers = showMore ? offers : offers.slice(0, 1);
 
   return (
-    <div className='control-offer p-3 rounded'>
+    <div className='control-offer p-1  ps-3 '>
       <span className='cartBold'>
         <BiSolidOffer /> Bank offers
       </span>
@@ -29,7 +29,7 @@ const Offer = () => {
         ))}
       </ul>
       {offers.length > 1 && (
-        <button className='ps-2 pe-2 rounded empty-button' onClick={toggleShowMore}>
+        <button className='cartBold border-0' onClick={toggleShowMore}>
           {showMore ? 'Hide' : 'Show More'}
         </button>
       )}
