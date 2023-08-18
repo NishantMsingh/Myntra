@@ -51,8 +51,57 @@ import product12womenImageCard from "../Images/productwomen121.png"
 import productwomen91 from "../Images/productwomen91.png";
 import productwomen92 from "../Images/productwomen92.png";
 import product9womenImageCard from "../Images/productwomen91.png"
+
+
+
+import productwomen131 from "../Images/productwomen131.png";
+import productwomen132 from "../Images/productwomen132.png";
+import product13womenImageCard from "../Images/productwomen131.png"
+
+import productwomen141 from "../Images/productwomen141.png";
+import productwomen142 from "../Images/productwomen142.png";
+import product14womenImageCard from "../Images/productwomen142.png"
 // eslint-disable-next-line
 const products = [
+  {
+    productCode: "16444880",
+    title: "Tokyo Talkies",
+    description: "Women Black Printed Sweatshirt",
+    star: "4.4",
+    rating: "172",
+    curPrice: "526",
+    prevPrice: "1249",
+    offer: "61% OFF",
+    seller: "Vison star",
+    imageCard: product11womenImageCard,
+    images: [productwomen111,productwomen112],
+  },
+  {
+    productCode: "16989926",
+    title: "SASSAFRAS",
+    description: "Women Pink Solid Midi Skirt",
+    star: "4.2",
+    rating: "343",
+    curPrice: "679",
+    prevPrice: "1699",
+    offer: "65% OFF",
+    seller: "ARDENT Retail Co",
+    imageCard: product12womenImageCard,
+    images: [productwomen121,productwomen122],
+  },
+  {
+    productCode: "7490126",
+    title: "Roadster",
+    description: "Burgundy Waist Tie-Ups Top",
+    star: "4.2",
+    rating: "343",
+    curPrice: "679",
+    prevPrice: "1699",
+    offer: "65% OFF",
+    seller: "Savadika Retail Private Limited",
+    imageCard: product13womenImageCard,
+    images: [productwomen131,productwomen132],
+  },
   {
     productCode: "21838776",
     title: "Kvsfab",
@@ -65,6 +114,19 @@ const products = [
     seller: "KVS Fab",
     imageCard: product1womenImageCard,
     images: [productwomen11, productwomen12, productwomen13, productwomen14],
+  },
+  {
+    productCode: "21064874",
+    title: "Azira",
+    description: "Women Printed Ethnic Longline Shrug",
+    star: "4.5",
+    rating: "1.2K ",
+    curPrice: "519",
+    prevPrice: "1799",
+    offer: "72% OFF",
+    seller: "H & S Studio LLP",
+    imageCard: product14womenImageCard,
+    images: [productwomen141, productwomen142],
   },
   {
     productCode: "22143838",
@@ -194,19 +256,6 @@ const products = [
     seller: "Vison star",
     imageCard: product11womenImageCard,
     images: [productwomen111,productwomen112],
-  },
-  {
-    productCode: "16989926",
-    title: "SASSAFRAS",
-    description: "Women Pink Solid Midi Skirt",
-    star: "4.2",
-    rating: "343",
-    curPrice: "679",
-    prevPrice: "1699",
-    offer: "65% OFF",
-    seller: "ARDENT Retail Co",
-    imageCard: product12womenImageCard,
-    images: [productwomen121,productwomen122],
   },
 ];
 
