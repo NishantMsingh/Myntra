@@ -30,6 +30,27 @@ import productwomen71 from "../Images/productwomen71.png";
 import productwomen72 from "../Images/productwomen72.png";
 import product7womenImageCard from "../Images/productwomen71.png";
 
+
+
+import productwomen81 from "../Images/productwomen81.png";
+import productwomen82 from "../Images/productwomen82.png";
+import product8womenImageCard from "../Images/productwomen81.png"
+
+import productwomen101 from "../Images/productwomen101.png";
+import productwomen102 from "../Images/productwomen102.png";
+import product10womenImageCard from "../Images/productwomen101.png"
+
+import productwomen111 from "../Images/productwomen111.png";
+import productwomen112 from "../Images/productwomen112.png";
+import product11womenImageCard from "../Images/productwomen111.png"
+
+import productwomen121 from "../Images/productwomen121.png";
+import productwomen122 from "../Images/productwomen122.png";
+import product12womenImageCard from "../Images/productwomen121.png"
+
+import productwomen91 from "../Images/productwomen91.png";
+import productwomen92 from "../Images/productwomen92.png";
+import product9womenImageCard from "../Images/productwomen91.png"
 // eslint-disable-next-line
 const products = [
   {
@@ -122,6 +143,70 @@ const products = [
     seller: "Savadika Retail Private Limited",
     imageCard: product7womenImageCard,
     images: [productwomen71,productwomen72],
+  },{
+    productCode: "17537888",
+    title: "Tokyo Talkies",
+    description: "Women Enchanting Fuchsia Solid Top with Trousers",
+    star: "4.2",
+    rating: "767",
+    curPrice: "549",
+    prevPrice: "1249",
+    offer: "700 OFF",
+    seller: "S & S Marketing",
+    imageCard: product8womenImageCard,
+    images: [productwomen81,productwomen82],
+  },
+  {
+    productCode: "22550012",
+    title: "Shae by SASSAFRAS",
+    description: "Ikat Printed Flared Maxi Skirts",
+    star: "4.2",
+    rating: "14",
+    curPrice: "1259",
+    prevPrice: "3599",
+    offer: "65% OFF",
+    seller: "ARDENT Retail Co",
+    imageCard: product9womenImageCard,
+    images: [productwomen91,productwomen92],
+  },
+  {
+    productCode: "24133828",
+    title: "Tokyo Talkies",
+    description: "Ikat Printed Flared Maxi Skirts",
+    star: "4.2",
+    rating: "14",
+    curPrice: "462",
+    prevPrice: "1849",
+    offer: "75% OFF",
+    seller: "Konde Products & Services Private Limited",
+    imageCard: product10womenImageCard,
+    images: [productwomen101,productwomen102],
+  },
+  {
+    productCode: "16444880",
+    title: "Tokyo Talkies",
+    description: "Women Black Printed Sweatshirt",
+    star: "4.4",
+    rating: "172",
+    curPrice: "526",
+    prevPrice: "1249",
+    offer: "61% OFF",
+    seller: "Vison star",
+    imageCard: product11womenImageCard,
+    images: [productwomen111,productwomen112],
+  },
+  {
+    productCode: "16989926",
+    title: "SASSAFRAS",
+    description: "Women Pink Solid Midi Skirt",
+    star: "4.2",
+    rating: "343",
+    curPrice: "679",
+    prevPrice: "1699",
+    offer: "65% OFF",
+    seller: "ARDENT Retail Co",
+    imageCard: product12womenImageCard,
+    images: [productwomen121,productwomen122],
   },
 ];
 
