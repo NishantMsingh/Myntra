@@ -3,11 +3,18 @@ import React from 'react';
 
 import { RxCross2 } from "react-icons/rx";
 import PropTypes from "prop-types";
+import { useContext } from 'react';
+import CartContext from '../../context/Cart-context';
 
 const CartProductCard = (props) => {
+  const ctx=useContext(CartContext);
   const removeItemHandler = () => {
     let con = window.confirm("Are you sure?");
     console.log(con);
+    if(con)
+    {
+      ctx.removeFromCart(props.products);
+    }
   };
 
   return (
@@ -22,7 +29,7 @@ const CartProductCard = (props) => {
         <p className="ps-2 pos-card-rel-3"><span className='offer-price'>Sold by :</span> {props.products.seller} </p>
         <p className='ps-2  pos-card-rel-2'>
           <span>Quantity</span>
-          <select name="quantity" className='qty ms-2 me-2'>
+          <select name="quantity" value={props.products.quantity} className='qty ms-2 me-2' disabled>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>

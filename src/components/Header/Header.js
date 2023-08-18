@@ -123,7 +123,7 @@ const Header = () => {
 
         <div className="user-cart-wish pos-top-5">
           <span>
-            <sup className="cart-number">{ctx.product.length}</sup>
+            <sup className="cart-number">{ctx.productCount}</sup>
           </span>
           <Link to="/checkOut" className="d-flex flex-row">
             <BsFillBagFill fontSize={"1.3rem"} color="black" />{" "}

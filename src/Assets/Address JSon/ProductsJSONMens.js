@@ -18,7 +18,7 @@ import productmen32 from "../Images/productmen32.png";
 import productmen41 from "../Images/productmen41.png";
 import product4menImageCard from "../Images/productmen41.png";
 import productmen42 from "../Images/productmen42.png";
-// eslint-disable-next-line
+
 const products = [
   {
     productCode: "22834606",

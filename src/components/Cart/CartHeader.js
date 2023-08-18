@@ -22,6 +22,6 @@ const CartHeader = (props) => {
   )
 }
 CartHeader.propTypes={
-  address: PropTypes.object.isRequired,
+  address: PropTypes.bool.isRequired,
 }
 export default CartHeader

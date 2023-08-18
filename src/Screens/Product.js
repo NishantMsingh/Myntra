@@ -12,16 +12,23 @@ import CartContext from "../context/Cart-context";
 const Product = () => {
   
 const [pin, setPin] = useState("");
+const [size, setSize] = useState(null);
 const currentProduct = JSON.parse(localStorage.getItem("product"));
 const ctx=useContext(CartContext);
 
-
+const sizeHandler=(size)=>{
+ setSize(size);
+}
 const addtoCardHandler=()=>{ 
-    ctx.addtoCart(currentProduct);
-
-      console.log(ctx.product.length);
+      if(size!=null)
+      {
+     ctx.addToC({...currentProduct,size});
  
-    alert("Item added to the card");
+      }
+      else
+      {
+        alert("Please select the size");
+      }
   }
   const PincodeHandler = (e) => {
     if (e.target.value.length > 6) {
@@ -63,16 +70,16 @@ const addtoCardHandler=()=>{
           <p className="select-size">SELECT SIZE</p>
           <div className="size-options mt-3 mb-3">
             <label className="bold">
-              <input type="radio" name="size" value="S" /> S
+              <input type="radio" name="size" value="S" onClick={()=>{sizeHandler("S")}}/> S
             </label>
             <label className="bold">
-              <input type="radio" name="size" value="M" /> M
+              <input type="radio" name="size" value="M" onClick={()=>{sizeHandler("M")}}/> M
             </label>
             <label className="bold">
-              <input type="radio" name="size" value="L" /> L
+              <input type="radio" name="size" value="L" onClick={()=>{sizeHandler("L")}}/> L
             </label>
             <label className="bold">
-              <input type="radio" name="size" value="XL" /> XL
+              <input type="radio" name="size" value="XL" onClick={()=>{sizeHandler("XL")}}/> XL
             </label>
           </div>
           <div className="addtoCartMobile">

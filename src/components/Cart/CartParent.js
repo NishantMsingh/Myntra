@@ -15,7 +15,11 @@ const CartParent = () => {
     {
       setEmpty(false);
     }
-  },[])
+    else
+    {
+      setEmpty(true);
+    }
+  },[ctx.product.length])
   const [address,setAddress]=useState(false);
  
   const HandleAddress=()=>{
