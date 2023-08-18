@@ -13,7 +13,7 @@ const ConfirmedOrder = () => {
       } else {
         clearInterval(timer);
  
-        // history('/');
+        history('/');
       }
     }, 1000);
 
