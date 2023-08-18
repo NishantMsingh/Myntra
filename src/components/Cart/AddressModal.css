@@ -28,6 +28,12 @@
   width: 55%;
   margin: 0 auto;
 }
+@media (max-width:768px) {
+  .modal-content {
+    width: 98%;
+    margin: 0 auto;
+  }
+}
 .modal-body {
   display: flex;
   flex-direction: column;
