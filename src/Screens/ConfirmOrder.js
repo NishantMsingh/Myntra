@@ -26,7 +26,7 @@ const ConfirmedOrder = () => {
     <div className="confirmed-order">
        <div className='d-flex flex-column align-items-center'>
        <h2 className="order-heading">Thank you for shoping <BsBagCheck/></h2>
-        <div className='text-start border border-success rounded p-4'>
+        <div className='text-start rounded p-4 bg-light'>
            <h5 className='text-success'>Order ID:CLONEMYNTRA0121</h5>
       <p className="delivery-date">Delivery Date: {deliveryDate}</p>
       <p className="redirect-timer">Redirecting in {secondsRemaining} seconds...</p> </div>
