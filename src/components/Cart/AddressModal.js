@@ -1,6 +1,5 @@
 import React from 'react';
 import "./AddressModal.css";
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import PropTypes from 'prop-types';
 
@@ -9,42 +8,42 @@ const AddressModal = (props) => {
     <Modal
       {...props}
       size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
+      aria-labelledby=""
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          <span className='slate'>ADD ADDRESS</span>
-        </Modal.Title>
-      </Modal.Header>
+     
+        
+         
+     
+ 
       <Modal.Body>
-        <div className="address-section">
-          <h6 className="section-heading slate">Contact details</h6>
-           <div>
-           <label htmlFor='name'> Name</label>
-          <input type='text' placeholder='Name....' id='name'/> 
+      
+        <div className="">
+        <span className='cartBold h4'>ADD ADDRESS</span>
+          <h6 className=" cartBold">Contact details</h6>
+           <div className='d-flex flex-row'>
+          
+          <input className='input' type='text' placeholder='Name....' id='name'/>     <input className='input' type='number' placeholder='Phone' id='number'/> 
            </div>
-           <div>
-           <label htmlFor='number'> Phone</label>
-          <input type='number' placeholder='Phone' id='number'/> 
-           </div>
+         
         </div>
-        <div className="address-section">
-          <h6  className="section-heading slate">Address</h6>
-           <label> Pin</label>
-           <input type='number'/> 
-
-           <label> Address</label>
-           <input type='text'/> 
-
-           <label> Locality</label>
-           <input type='text'/> 
-
+        <div className="">
+          <h6  className=" cartBold">Address</h6>
+          
+          <div className='d-flex flex-row'>
+          <input className='input' type='number' placeholder='Pin code'/>    <input className='input' type='text' placeholder='Locality/town'/> 
+           </div>
+         
+           <div>
+          
+           <textarea className='input w-100' type='text' placeholder='Address...'/> 
+           </div>
+           <button className='place-order-btn w-100' onClick={props.addressHandler}>Proceed to payment</button>
         </div>
       </Modal.Body>
-      <Modal.Footer>
-        <Button className='place-order-btn' onClick={props.addressHandler}>Proceed to payment</Button>
-      </Modal.Footer>
+      
+        
+     
     </Modal>
   );
 }
