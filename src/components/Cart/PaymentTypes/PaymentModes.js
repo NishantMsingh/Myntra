@@ -7,15 +7,18 @@ import { FaGooglePay } from "react-icons/fa";
 import { BsWallet } from "react-icons/bs";
 import { BsBank } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
+import CartContext from "../../../context/Cart-context";
+import { useContext } from "react";
 const PaymentModes = () => {
   const navigate=useNavigate();
   const [selectedOption, setSelectedOption] = useState(null);
  const transactionID=useRef();
 
-
+const ctx=useContext(CartContext);
 const placeOrder=(paymode)=>{
   if(paymode==="COD")
   {
+    ctx.clearCart();
     navigate("/ConfirmedOrder");
   }
   else if(paymode==="GPAY")
@@ -23,6 +26,7 @@ const placeOrder=(paymode)=>{
     let transction=transactionID.current.value;
     if(transction.length===16)
     {
+      ctx.clearCart();
       navigate("/ConfirmedOrder");
     }
     else

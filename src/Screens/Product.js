@@ -23,7 +23,6 @@ const addtoCardHandler=()=>{
       if(size!=null)
       {
      ctx.addToC({...currentProduct,size});
- 
       }
       else
       {

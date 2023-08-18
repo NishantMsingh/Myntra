@@ -54,13 +54,20 @@ const removeHandler=(product)=>{
   SetDiscount((prev) => prev -Number(product.prevPrice));
 }
 
-
+const OrderConfirmed=()=>{
+  setItems([]);
+  SetTotal(0);
+  SetAmount(0);
+  SetMRP(0);
+  SetDiscount(0);
+}
   const contextValue = {
     totalAmount:Number(amount)+99,
     totalDiscount:discount,
     productCount:total,
     product: items,
     TotalMRP:MRP,
+    clearCart:OrderConfirmed,
     addToC: addToCart,
     removeFromCart:removeHandler,
   };
