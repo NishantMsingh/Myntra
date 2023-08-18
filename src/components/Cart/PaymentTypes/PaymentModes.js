@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { PiShootingStarFill } from "react-icons/pi";
 import { MdMoney } from "react-icons/md";
 import { SiFlipkart } from "react-icons/si";
@@ -6,10 +6,31 @@ import { BsCreditCard } from "react-icons/bs";
 import { FaGooglePay } from "react-icons/fa";
 import { BsWallet } from "react-icons/bs";
 import { BsBank } from "react-icons/bs";
-import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 const PaymentModes = () => {
+  const navigate=useNavigate();
   const [selectedOption, setSelectedOption] = useState(null);
+ const transactionID=useRef();
+
+
+const placeOrder=(paymode)=>{
+  if(paymode==="COD")
+  {
+    navigate("/ConfirmedOrder");
+  }
+  else if(paymode==="GPAY")
+  {
+    let transction=transactionID.current.value;
+    if(transction.length===16)
+    {
+      navigate("/ConfirmedOrder");
+    }
+    else
+    {
+      alert("The transaction id should have 16 digits")
+    }
+  }
+}
 
   const handleRadioClick = (option) => {
     setSelectedOption(option);
@@ -82,10 +103,10 @@ const PaymentModes = () => {
                 Rs 10 will get charged extra for the Pay on Delivery. You can
                 pay via cash/upi while delivery
               </p>
-              <Link to="/ConfirmedOrder"><button className="slate boldCart empty-button ps-2 pe-2  ms-1 mb-3 w-90 rounded">
+              <button onClick={()=>{placeOrder("COD")}} className="slate boldCart empty-button ps-2 pe-2  ms-1 mb-3 w-90 rounded">
                 {" "}
                 PLACE ORDER
-              </button>  </Link>
+              </button>  
             </div>
           </div>
           <div
@@ -115,14 +136,14 @@ const PaymentModes = () => {
             <div className={selectedOption === "GooglePay" ? "opacity-show" : "opacity-hide"}>
               <p className="fs-6 ms-1 text-light">
               <a href='upi://nishantkumarsingh16019@okhdfcbank'>
-              Pay & submit : nishantkumarsingh16019@okhdfc<br/>bank
+               nishantkumarsingh16019@okhdfc<br/>bank
               </a>
               </p>
-              <input type='text' placeholder="Transaction id" className="w-90 ms-1 mb-1"/> 
-               <Link to="/ConfirmedOrder"><button className="slate boldCart empty-button ps-2 pe-2  ms-1 mb-3 w-90 rounded">
+              <input ref={transactionID} type='text' placeholder="Transaction id" className="w-90 ms-1 mb-1"/> 
+              <button onClick={()=>{placeOrder("GPAY")}} className="slate boldCart empty-button ps-2 pe-2  ms-1 mb-3 w-90 rounded">
                 {" "}
                 PLACE ORDER
-              </button>  </Link>
+              </button>  
             </div>
           </div>
         </div>
