@@ -29,7 +29,7 @@ const ConfirmedOrder = () => {
         <div className='text-start rounded p-4 bg-light'>
            <h5 className='text-success'>Order ID:CLONEMYNTRA0121</h5>
       <p className="delivery-date">Delivery Date: {deliveryDate}</p>
-      <p className="redirect-timer">Redirecting in {secondsRemaining} seconds...</p> </div>
+      <p className="redirect-timer">Redirecting to home in {secondsRemaining} seconds...</p> </div>
        </div>
     </div>
   );
