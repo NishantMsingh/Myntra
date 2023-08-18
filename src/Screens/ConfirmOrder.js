@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./Confirm.css";
+import {BsBagCheck} from "react-icons/bs";
 const ConfirmedOrder = () => {
   const history = useNavigate();
   const [secondsRemaining, setSecondsRemaining] = useState(10);
@@ -12,7 +13,7 @@ const ConfirmedOrder = () => {
       } else {
         clearInterval(timer);
  
-        history('/');
+        // history('/');
       }
     }, 1000);
 
@@ -23,9 +24,12 @@ const ConfirmedOrder = () => {
  let deliveryDate="3 september";
   return (
     <div className="confirmed-order">
-      <h2 className="order-heading">Order Confirmed</h2>
+       <div className='d-flex flex-column align-items-center'>
+       <h2 className="order-heading">Thank you for shoping <BsBagCheck/></h2>
+        <div className='text-start border border-success rounded p-4'> <h4>Order ID:CLONEMYNTRA0121</h4>
       <p className="delivery-date">Delivery Date: {deliveryDate}</p>
-      <p className="redirect-timer">Redirecting in {secondsRemaining} seconds...</p>
+      <p className="redirect-timer">Redirecting in {secondsRemaining} seconds...</p> </div>
+       </div>
     </div>
   );
 };

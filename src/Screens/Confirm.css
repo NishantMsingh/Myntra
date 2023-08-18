@@ -1,12 +1,36 @@
-/* styles.css */
 
 .confirmed-order {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    position: absolute;
+    
+    width: 0vw;
+    height: 0vh;
     font-family: Arial, sans-serif;
+    background-color: rgba(231, 46, 87, 0.295);
+    animation: success .4s ease-in .5s 1 normal forwards;
+    overflow: hidden;
+  }
+
+
+  @keyframes success {
+    from{
+      width: 0vw;
+      height: 0vh;
+      bottom: 50%;
+    right: 50%;
+      border-radius: 50%;
+    }
+    to{
+      width: 100vw;
+      height: 100vh;
+      bottom: 0;
+    right: 0;
+      
+      border-radius: 0%;
+    }
   }
   .pos{
     position: absolute;
@@ -14,8 +38,56 @@
     left: 0;
   }
   .order-heading {
-    font-size: 24px;
+    font-size: 3rem;
     margin-bottom: 10px;
+    font-weight: 500;
+    color: rgb(231, 47, 103);
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  @keyframes myAnim {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(-45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
   }
   
   .delivery-date {
@@ -28,5 +100,5 @@
     margin-top: 10px;
   }
   
-  /* Add any additional styling as needed */
+
   

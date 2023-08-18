@@ -143,7 +143,7 @@ const placeOrder=(paymode)=>{
                nishantkumarsingh16019@okhdfc<br/>bank
               </a>
               </p>
-              <input ref={transactionID} type='text' placeholder="Transaction id" className="w-90 ms-1 mb-1"/> 
+              <input ref={transactionID} type='text' placeholder="Transaction id" className=" input w-90 ms-1 mb-2 bg-none"/> 
               <button onClick={()=>{placeOrder("GPAY")}} className="slate boldCart empty-button ps-2 pe-2  ms-1 mb-3 w-90 rounded">
                 {" "}
                 PLACE ORDER

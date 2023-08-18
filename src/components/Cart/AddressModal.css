@@ -34,6 +34,9 @@
   align-items: center;
 
 }
+.bg-none{
+  background-color: transparent;
+}
 .input{
   border: none;
   border-bottom: 1px solid  rgba(243, 9, 67, 0.151);
