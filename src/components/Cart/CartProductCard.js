@@ -37,7 +37,7 @@ const CartProductCard = (props) => {
             <option value="5">5</option>
           </select>
           <span>Size</span>
-          <select name="size" className='qty ms-2 '>
+          <select name="size" value={props.products.size}  className='qty ms-2 ' disabled>
             <option value="M">M</option>
             <option value="S">S</option>
             <option value="L">L</option>
