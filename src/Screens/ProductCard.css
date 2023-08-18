@@ -55,10 +55,14 @@
   .product-name {
     font-weight: bold;
     color: #333;
+    text-overflow: ellipsis;
+    width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .product-description {
-    color: #777;
+    color: #0202026c;
     text-overflow: ellipsis;
     width: 170px;
     white-space: nowrap;
@@ -106,7 +110,7 @@
       .product-mrp {
         text-decoration: line-through;
         color: #777;
-        margin-right: 10px;
+        margin-right: 2px;
         font-size: 8px;
       }
     

@@ -38,6 +38,10 @@ import productmen82 from "../Images/productmen82.png";
 import productmen91 from "../Images/productmen91.png";
 import product9menImageCard from "../Images/productmen91.png";
 import productmen92 from "../Images/productmen92.png";
+
+import productmen101 from "../Images/productmen101.png";
+import product10menImageCard from "../Images/productmen101.png";
+import productmen102 from "../Images/productmen102.png";
 const products = [
   {
     productCode: "22834606",
@@ -155,6 +159,19 @@ const products = [
     seller: "THE INDIAN GARAGE CO.",
     imageCard: product9menImageCard,
     images: [productmen91, productmen92],
+  },
+  {
+    productCode: "1667040",
+    title: "Roadster",
+    description: "Men Green & Beige Checked Sustainable Casual Shirt",
+    star: "4.3",
+    rating: "3.7k ",
+    curPrice: "1499",
+    prevPrice: "1999",
+    offer: "500 OFF",
+    seller: "Savadika Retail Private Limited",
+    imageCard: product10menImageCard,
+    images: [productmen101, productmen102],
   }
  
 ];
