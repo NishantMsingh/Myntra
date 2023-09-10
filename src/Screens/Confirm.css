@@ -101,4 +101,10 @@
   }
   
 
-  
+  @media (max-width:768px)
+  {
+    .order-heading {
+      font-size: 1.5rem;
+     
+    }
+  }
