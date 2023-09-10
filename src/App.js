@@ -52,12 +52,14 @@ function App() {
             path="/product/:productCode"
             element={
               <>
-                <Header />
+              
               
                 <Suspense fallback={<FallBack/>}>
+                <Header />
               <LazyProduct location={location}/>
+              <Footer />
             </Suspense>
-                <Footer />
+                
               </>
             }
           />
@@ -65,11 +67,13 @@ function App() {
             path="/Women"
             element={
               <>
-                <Header />
+         
                 <Suspense fallback={<FallBack/>}>
+                <Header />
                <LazyWomen  />
+               <Footer />
                </Suspense>
-                <Footer />
+              
               </>
             }
           />
@@ -77,11 +81,13 @@ function App() {
             path="/Men"
             element={
               <>
-                <Header />
+            
                 <Suspense fallback={<FallBack/>}>
+                <Header />
                <LazyMen  />
+               <Footer />
                </Suspense>
-                <Footer />
+              
               </>
             }
           />
@@ -89,11 +95,13 @@ function App() {
             path="*"
             element={
               <>
-                <Header />
+               
                 <Suspense fallback={<FallBack/>}>
+                <Header />
                <LazyHome  />
+               <Footer />
                </Suspense>
-                <Footer />
+               
               </>
             }
           />
