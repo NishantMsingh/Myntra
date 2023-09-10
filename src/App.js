@@ -3,7 +3,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import React from "react";
+
 import { lazy, Suspense } from 'react';
+import FallBack from "./components/Fallback/FallBack";
 // Lazy 
 const LazyConfirmedOrder = lazy(() => import('./Screens/ConfirmOrder'));
 const LazyHome = lazy(() => import('./Screens/Home'));
@@ -24,7 +26,7 @@ function App() {
             element={
               <>
                 <Header />
-               <Suspense fallback={<div>Loading...</div>}>
+               <Suspense fallback={<FallBack/>}>
                <LazyHome  />
                </Suspense>
                 <Footer />
@@ -34,7 +36,7 @@ function App() {
           <Route
             path="/ConfirmedOrder"
             element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<FallBack/>}>
               <LazyConfirmedOrder  />
             </Suspense>
                 
@@ -42,7 +44,7 @@ function App() {
             }
           />
           <Route path="/Auth" element={
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<FallBack/>}>
               <LazyAuth/>
             </Suspense>
           } />
@@ -52,7 +54,7 @@ function App() {
               <>
                 <Header />
               
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<FallBack/>}>
               <LazyProduct location={location}/>
             </Suspense>
                 <Footer />
@@ -64,7 +66,7 @@ function App() {
             element={
               <>
                 <Header />
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<FallBack/>}>
                <LazyWomen  />
                </Suspense>
                 <Footer />
@@ -76,7 +78,7 @@ function App() {
             element={
               <>
                 <Header />
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<FallBack/>}>
                <LazyMen  />
                </Suspense>
                 <Footer />
@@ -88,7 +90,7 @@ function App() {
             element={
               <>
                 <Header />
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<FallBack/>}>
                <LazyHome  />
                </Suspense>
                 <Footer />
@@ -96,7 +98,7 @@ function App() {
             }
           />
           <Route path="/checkOut" element={
-            <Suspense fallback={<div>Loading...</div>}> 
+            <Suspense fallback={<FallBack/>}> 
               <LazyCartParent/>
             </Suspense>
           }/>

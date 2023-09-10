@@ -5,7 +5,7 @@ import { RiSearchLine } from "react-icons/ri";
 import { CgProfile } from "react-icons/cg";
 import { CgMenuRight } from "react-icons/cg";
 
-import { BsFillBagFill } from "react-icons/bs";
+import { BsHandbagFill } from "react-icons/bs";
 import logo from "../../Assets/Images/Logo.png";
 import { Link, NavLink } from "react-router-dom";
 import { useContext } from "react";
@@ -126,7 +126,7 @@ const Header = () => {
             <sup className="cart-number">{ctx.productCount}</sup>
           </span>
           <Link to="/checkOut" className="d-flex flex-row">
-            <BsFillBagFill fontSize={"1.3rem"} color="black" />{" "}
+            <BsHandbagFill fontSize={"1.3rem"} color="black" />{" "}
           </Link>
           <span>Bag</span>
         </div>

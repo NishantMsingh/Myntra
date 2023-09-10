@@ -1,0 +1,31 @@
+.fallback-container{
+    width: 100%;
+    min-height: 80vh;
+    background-color: #fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.m,.y,.n,.t,.r,.a{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.m{
+    color: rgb(243, 9, 68);
+}
+.y{
+    color: #FF912E;
+
+}
+.t{
+    color: #F25511;
+}
+.n{
+    color: rgb(243, 9, 68);
+}
+.r{
+    color:  #FF912E;
+}
+.a{
+    color: #F25511;
+}
